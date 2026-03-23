@@ -14,9 +14,10 @@
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
 body{font-family:'Inter',sans-serif;color:var(--s);background:var(--w);overflow-x:hidden;cursor:none}
 a{text-decoration:none;color:inherit}img{display:block;max-width:100%;height:auto}button,input,select,textarea{font-family:inherit;cursor:none}
-#dot{position:fixed;width:10px;height:10px;background:var(--p);border-radius:50%;pointer-events:none;z-index:99999;transform:translate(-50%,-50%);transition:width .15s,height .15s,background .15s,border-radius .15s}
-#rng{position:fixed;width:42px;height:42px;border:2px solid var(--p);border-radius:50%;pointer-events:none;z-index:99998;transform:translate(-50%,-50%);transition:width .2s ease,height .2s ease,border-color .2s,background .2s,opacity .2s;opacity:.45}
-body.ch #dot{width:20px;height:20px;background:var(--pd);opacity:.8}body.ch #rng{width:60px;height:60px;border-color:var(--pd);background:rgba(92,196,77,.06);opacity:.55}
+#dot{position:fixed;width:10px;height:10px;background:var(--p);border-radius:50%;pointer-events:none;z-index:99999;transform:translate(-50%,-50%);transition:width .2s cubic-bezier(.23,1,.32,1),height .2s cubic-bezier(.23,1,.32,1),background .2s,border-radius .2s,opacity .2s}
+#rng{position:fixed;width:42px;height:42px;border:2px solid var(--p);border-radius:50%;pointer-events:none;z-index:99998;transform:translate(-50%,-50%);transition:all .25s cubic-bezier(.23,1,.32,1);opacity:.45}
+body.ch #dot{width:6px;height:6px;background:var(--pd);opacity:.6}
+body.ch #rng{border-color:var(--pd);background:rgba(92,196,77,.08);opacity:.7}
 body.ct #dot{width:3px;height:22px;border-radius:2px;background:var(--pd)}body.ct #rng{opacity:0}
 @media(max-width:768px){body{cursor:auto}#dot,#rng{display:none}}
 nav{position:fixed;top:0;left:0;right:0;padding:0 60px;height:72px;display:flex;justify-content:space-between;align-items:center;background:rgba(255,255,255,.95);backdrop-filter:blur(14px);z-index:1000;border-bottom:1px solid rgba(0,0,0,.05);transition:box-shadow .3s}nav.sc{box-shadow:0 2px 12px rgba(30,60,30,.06)}
@@ -44,7 +45,7 @@ footer{background:var(--s);color:rgba(255,255,255,.5);border-top:1px solid rgba(
 </head>
 <body>
 <div id="dot"></div><div id="rng"></div>
-<nav id="nb"><div class="logo">ЭкоКаркас</div><ul class="nl"><li><a href="#services">Услуги</a></li><li><a href="#portfolio">Проекты</a></li><li><a href="#process">Стройка</a></li><li><a href="#reviews">Отзывы</a></li><li><a href="#calculator">Расчёт</a></li><li><a href="#contacts">Контакты</a></li></ul><a href="tel:+79932707373" class="np">📞 +7 (993) 270-73-73</a><a href="#contacts" class="nc">Заявка</a><button class="hb" id="hbBtn"><span></span><span></span><span></span></button></nav>
+<nav id="nb"><a href="#" class="logo"><img src="hero/logo.png" alt="ЭкоКаркас" style="height:40px" onerror="this.outerHTML='<span style=\'font-family:Playfair Display,serif;font-weight:700;font-size:24px;color:var(--p)\'>ЭкоКаркас</span>'"></a><ul class="nl"><li><a href="#services">Услуги</a></li><li><a href="#portfolio">Проекты</a></li><li><a href="#process">Стройка</a></li><li><a href="#reviews">Отзывы</a></li><li><a href="#calculator">Расчёт</a></li><li><a href="#contacts">Контакты</a></li></ul><a href="tel:+79932707373" class="np">📞 +7 (993) 270-73-73</a><a href="#contacts" class="nc">Заявка</a><button class="hb" id="hbBtn"><span></span><span></span><span></span></button></nav>
 <div class="mm" id="mm"><a href="#services" onclick="cmm()">Услуги</a><a href="#portfolio" onclick="cmm()">Проекты</a><a href="#process" onclick="cmm()">Стройка</a><a href="#reviews" onclick="cmm()">Отзывы</a><a href="#calculator" onclick="cmm()">Расчёт</a><a href="#contacts" onclick="cmm()">Контакты</a><a href="tel:+79932707373">📞 +7 (993) 270-73-73</a><a href="https://t.me/ecokarkass" target="_blank">Telegram</a></div>
 
 <section class="hero"><div class="hi"><div class="hc"><div class="hs"><div class="hsn">64</div><div class="hst">дома построено<br>в Московской области</div></div><h1>Строим дом, в котором <em>хочется жить</em></h1><p class="hd">Каркасные, газоблочные и модульные дома под ключ. Прозрачные цены, семейная ипотека.<br><a href="tel:+79932707373" style="color:var(--p);font-weight:700">+7 (993) 270-73-73</a></p><div class="ha"><a href="#calculator" class="btn bp">Рассчитать стоимость</a><a href="#portfolio" class="btn bo">Проекты →</a></div></div><div class="him"><img src="hero/hero-main.jpg" alt="ЭкоКаркас" onerror="this.src='https://images.unsplash.com/photo-1600585154340-be6161a56c0c?w=800&q=80'"></div></div></section>
@@ -69,24 +70,49 @@ footer{background:var(--s);color:rgba(255,255,255,.5);border-top:1px solid rgba(
 
 <section style="padding:80px 60px;background:var(--pl)"><div class="si rv2"><div class="st">Сравнение</div><h2 class="sh">Какой дом выбрать?</h2><table style="width:100%;border-collapse:collapse;margin-top:36px;font-size:14px;border-radius:var(--r);overflow:hidden;box-shadow:0 2px 12px rgba(30,60,30,.06)"><thead><tr style="background:var(--pd);color:var(--w)"><th style="padding:14px 18px;text-align:left">Параметр</th><th style="padding:14px 18px;text-align:left">Каркасный</th><th style="padding:14px 18px;text-align:left">Газоблок</th><th style="padding:14px 18px;text-align:left">Модульный</th></tr></thead><tbody><tr style="background:var(--w)"><td style="padding:14px 18px;font-weight:600">Цена/м²</td><td style="padding:14px 18px">от 65 000 ₽</td><td style="padding:14px 18px">от 75 000 ₽</td><td style="padding:14px 18px">от 55 000 ₽</td></tr><tr style="background:var(--bg)"><td style="padding:14px 18px;font-weight:600">Срок</td><td style="padding:14px 18px">2–4 мес.</td><td style="padding:14px 18px">4–6 мес.</td><td style="padding:14px 18px">1–2 мес.</td></tr><tr style="background:var(--w)"><td style="padding:14px 18px;font-weight:600">Теплоизоляция</td><td style="padding:14px 18px">Отличная</td><td style="padding:14px 18px">Хорошая</td><td style="padding:14px 18px">Хорошая</td></tr><tr style="background:var(--bg)"><td style="padding:14px 18px;font-weight:600">Долговечность</td><td style="padding:14px 18px">50+ лет</td><td style="padding:14px 18px">80+ лет</td><td style="padding:14px 18px">30+ лет</td></tr></tbody></table></div></section>
 
-<section class="con" id="contacts"><div class="si rv2"><div class="st">Контакты</div><h2 class="sh">Свяжитесь с нами</h2><p class="ss">Ответим на все вопросы.</p><div class="cog"><div><div class="ci"><div class="cib">📞</div><div><h4>Телефон</h4><p><a href="tel:+79932707373">+7 (993) 270-73-73</a></p></div></div><div class="ci"><div class="cib">✉️</div><div><h4>Email</h4><p><a href="mailto:ecokarkas24@yandex.ru">ecokarkas24@yandex.ru</a></p></div></div><div class="ci"><div class="cib">💬</div><div><h4>Мессенджеры</h4><p><a href="https://t.me/ecokarkass" target="_blank">Telegram</a> / <a href="https://wa.me/79932707373" target="_blank">WhatsApp</a></p></div></div><div class="ci"><div class="cib">📍</div><div><h4>Адрес</h4><p>МО, г. Домодедово,<br>ул. 25 лет Октября, 18, корп. 14</p></div></div><div class="mc"><iframe src="https://yandex.ru/map-widget/v1/?ll=37.7675%2C55.4368&z=16&pt=37.7675%2C55.4368%2Cpm2gnm" allowfullscreen loading="lazy"></iframe></div></div><div class="cfb"><h3>Оставьте заявку</h3><div class="fgr"><input class="cin" id="fN" placeholder="Имя" required><input class="cin" id="fP" placeholder="Телефон" required><input class="cin" id="fE" placeholder="Email"><select class="cin" id="fS"><option value="">Что интересует?</option><option>Каркасный дом</option><option>Газоблок</option><option>Модульный</option><option>Баня</option><option>Другое</option></select><textarea class="cin msi2" id="fM" placeholder="Сообщение"></textarea></div><div class="csr"><input type="checkbox" id="cs" required><label for="cs">Даю согласие на <a href="#" id="pl">обработку данных</a> (ФЗ №152)</label></div><button class="sbn" id="sB" disabled>Отправить заявку</button></div></div></div></section>
+<section class="con" id="contacts"><div class="si rv2"><div class="st">Контакты</div><h2 class="sh">Свяжитесь с нами</h2><p class="ss">Ответим на все вопросы.</p><div class="cog"><div><div class="ci"><div class="cib">📞</div><div><h4>Телефон</h4><p><a href="tel:+79932707373">+7 (993) 270-73-73</a></p></div></div><div class="ci"><div class="cib">✉️</div><div><h4>Email</h4><p><a href="/cdn-cgi/l/email-protection#9df8fef2f6fceff6fceeafa9dde4fcf3f9f8e5b3efe8"><span class="__cf_email__" data-cfemail="dbbeb8b4b0baa9b0baa8e9ef9ba2bab5bfbea3f5a9ae">[email&#160;protected]</span></a></p></div></div><div class="ci"><div class="cib">💬</div><div><h4>Мессенджеры</h4><p><a href="https://t.me/ecokarkass" target="_blank">Telegram</a> / <a href="https://wa.me/79932707373" target="_blank">WhatsApp</a></p></div></div><div class="ci"><div class="cib">📍</div><div><h4>Адрес</h4><p>МО, г. Домодедово,<br>ул. 25 лет Октября, 18, корп. 14</p></div></div><div class="mc"><iframe src="https://yandex.ru/map-widget/v1/?ll=37.7675%2C55.4368&z=16&pt=37.7675%2C55.4368%2Cpm2gnm" allowfullscreen loading="lazy"></iframe></div></div><div class="cfb"><h3>Оставьте заявку</h3><div class="fgr"><input class="cin" id="fN" placeholder="Имя" required><input class="cin" id="fP" placeholder="Телефон" required><input class="cin" id="fE" placeholder="Email"><select class="cin" id="fS"><option value="">Что интересует?</option><option>Каркасный дом</option><option>Газоблок</option><option>Модульный</option><option>Баня</option><option>Другое</option></select><textarea class="cin msi2" id="fM" placeholder="Сообщение"></textarea></div><div class="csr"><input type="checkbox" id="cs" required><label for="cs">Даю согласие на <a href="#" id="pl">обработку данных</a> (ФЗ №152)</label></div><button class="sbn" id="sB" disabled>Отправить заявку</button></div></div></div></section>
 
 <a href="https://t.me/ecokarkass" target="_blank" class="tgf">✈</a>
 <footer><div class="fti"><span>© 2024–2026 ЭкоКаркас</span><div style="display:flex;gap:20px"><a href="tel:+79932707373">+7 (993) 270-73-73</a><a href="https://t.me/ecokarkass" target="_blank">Telegram</a><a href="https://wa.me/79932707373" target="_blank">WhatsApp</a></div></div></footer>
 
-<div class="mo" id="pM"><div class="mdl" style="max-width:700px"><button class="mx" onclick="document.getElementById('pM').classList.remove('op')">✕</button><div class="mbd"><h3>Политика конфиденциальности</h3><p style="margin-top:16px;font-size:14px;color:var(--g);line-height:1.7"><b>1.</b> Сайт собирает данные для связи.<br><br><b>2.</b> Данные не передаются третьим лицам.<br><br><b>3.</b> Обработка для подготовки предложений.<br><br><b>4.</b> Защита данных от неправомерного доступа.<br><br><b>5.</b> Заполняя форму, вы соглашаетесь с ФЗ №152.<br><br>Контакты: ecokarkas24@yandex.ru, +7 (993) 270-73-73<br>МО, г. Домодедово, ул. 25 лет Октября, 18, корп. 14</p></div></div></div>
+<div class="mo" id="pM"><div class="mdl" style="max-width:700px"><button class="mx" onclick="document.getElementById('pM').classList.remove('op')">✕</button><div class="mbd"><h3>Политика конфиденциальности</h3><p style="margin-top:16px;font-size:14px;color:var(--g);line-height:1.7"><b>1.</b> Сайт собирает данные для связи.<br><br><b>2.</b> Данные не передаются третьим лицам.<br><br><b>3.</b> Обработка для подготовки предложений.<br><br><b>4.</b> Защита данных от неправомерного доступа.<br><br><b>5.</b> Заполняя форму, вы соглашаетесь с ФЗ №152.<br><br>Контакты: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6401070b0f05160f05175650241d050a00011c4a1611">[email&#160;protected]</a>, +7 (993) 270-73-73<br>МО, г. Домодедово, ул. 25 лет Октября, 18, корп. 14</p></div></div></div>
 <div class="mo" id="prM"><div class="mdl"><button class="mx" id="prX">✕</button><div class="mg" id="mG"><img id="mI" src="" alt=""><button class="mn2 pr" id="mP">‹</button><button class="mn2 nx" id="mN">›</button><div class="mdt" id="mD"></div></div><div class="mbd" id="mB"></div></div></div>
 
 <!-- ПРОЕКТЫ — ОТДЕЛЬНЫЙ ФАЙЛ -->
-<script src="projects.js"></script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="projects.js"></script>
 
 <script>
 // CURSOR
 const dot=document.getElementById('dot'),rng2=document.getElementById('rng');
-let mx=0,my=0,rx=0,ry=0;
+let mx=0,my=0,rx=0,ry=0,magTarget=null;
 document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px'});
-(function a(){rx+=(mx-rx)*.12;ry+=(my-ry)*.12;rng2.style.left=rx+'px';rng2.style.top=ry+'px';requestAnimationFrame(a)})();
-function bc(){document.querySelectorAll('a,button,.sc2,.pc,.rc,.fq,.ptb,.mb,.gc,.wc').forEach(e=>{e.onmouseenter=()=>document.body.classList.add('ch');e.onmouseleave=()=>document.body.classList.remove('ch')});document.querySelectorAll('input,textarea,select').forEach(e=>{e.onmouseenter=()=>{document.body.classList.add('ct');document.body.classList.remove('ch')};e.onmouseleave=()=>document.body.classList.remove('ct')})}bc();
+(function a(){
+  if(magTarget){
+    const r=magTarget.getBoundingClientRect();
+    const cx=r.left+r.width/2,cy=r.top+r.height/2;
+    rx+=(cx-rx)*.18;ry+=(cy-ry)*.18;
+    rng2.style.left=rx+'px';rng2.style.top=ry+'px';
+    rng2.style.width=(r.width+16)+'px';rng2.style.height=(r.height+16)+'px';
+    rng2.style.borderRadius=(Math.min(r.height,40)+8)+'px';
+  }else{
+    rx+=(mx-rx)*.12;ry+=(my-ry)*.12;
+    rng2.style.left=rx+'px';rng2.style.top=ry+'px';
+    rng2.style.width='42px';rng2.style.height='42px';
+    rng2.style.borderRadius='50%';
+  }
+  requestAnimationFrame(a);
+})();
+function bc(){
+  const hoverSel='a,button,.sc2,.pc,.rc,.fq,.ptb,.mb,.gc,.wc,.btn,.nc,.cbt,.yl,.tgf,.sbn,.cbn,.cbtn';
+  document.querySelectorAll(hoverSel).forEach(e=>{
+    e.onmouseenter=()=>{document.body.classList.add('ch');magTarget=e};
+    e.onmouseleave=()=>{document.body.classList.remove('ch');magTarget=null};
+  });
+  document.querySelectorAll('input,textarea,select').forEach(e=>{
+    e.onmouseenter=()=>{document.body.classList.add('ct');document.body.classList.remove('ch');magTarget=null};
+    e.onmouseleave=()=>document.body.classList.remove('ct');
+  });
+}bc();
 window.addEventListener('scroll',()=>document.getElementById('nb').classList.toggle('sc',scrollY>40));
 document.getElementById('hbBtn').onclick=()=>document.getElementById('mm').classList.toggle('op');
 function cmm(){document.getElementById('mm').classList.remove('op')}
@@ -145,9 +171,4 @@ document.getElementById('cB').onclick=()=>{const a=+cA.value,fl=+document.getEle
 document.getElementById('sB').onclick=()=>{const n=document.getElementById('fN').value.trim(),p=document.getElementById('fP').value.trim();if(!n||!p){alert('Заполните имя и телефон.');return}if(!document.getElementById('cs').checked)return;const BOT='YOUR_BOT_TOKEN',CHAT='YOUR_CHAT_ID';if(BOT!=='YOUR_BOT_TOKEN'){const e=document.getElementById('fE').value.trim(),s=document.getElementById('fS').value,m=document.getElementById('fM').value.trim();const txt=['🏠 Заявка!','',`👤 ${n}`,`📞 ${p}`,e?`📧 ${e}`:'',s?`🔨 ${s}`:'',m?`💬 ${m}`:'','',`📅 ${new Date().toLocaleString('ru-RU')}`].filter(Boolean).join('\n');fetch(`https://api.telegram.org/bot${BOT}/sendMessage`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({chat_id:CHAT,text:txt})}).catch(console.error)}alert('Спасибо! Мы свяжемся с вами.');['fN','fP','fE','fM'].forEach(id=>document.getElementById(id).value='');document.getElementById('fS').value=''};
 
 // REVEAL
-document.querySelectorAll('.rv2').forEach(e=>new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting)en.target.classList.add('vis')}),{threshold:.1}).observe(e));
-// SMOOTH
-document.querySelectorAll('a[href^="#"]').forEach(a=>a.onclick=e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'})}});
-</script>
-</body>
-</html>
+document.querySelectorAll('
