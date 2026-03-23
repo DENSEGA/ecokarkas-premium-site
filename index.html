@@ -7,24 +7,43 @@
 <meta name="description" content="ЭкоКаркас — строительство каркасных, газоблочных и модульных домов под ключ. 64 дома. Семейная ипотека. Домодедово.">
 <meta name="keywords" content="каркасный дом, строительство, дом под ключ, газоблок, модульный дом, баня, Домодедово, семейная ипотека">
 <link rel="canonical" href="https://densega.github.io/ecokarkas-premium-site/">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","name":"ЭкоКаркас","telephone":"+79932707373","email":"ecokarkas24@yandex.ru","address":{"@type":"PostalAddress","streetAddress":"ул. 25 лет Октября, 18, корп. 14","addressLocality":"Домодедово","addressRegion":"Московская область","addressCountry":"RU"},"priceRange":"от 65 000 ₽/м²"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","name":"ЭкоКаркас","telephone":"+79932707373","address":{"@type":"PostalAddress","streetAddress":"ул. 25 лет Октября, 18, корп. 14","addressLocality":"Домодедово","addressRegion":"Московская область","addressCountry":"RU"},"priceRange":"от 65 000 ₽/м²"}</script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 <style>
 :root{--p:#5cc44d;--pd:#3a8f2b;--pl:#eafbe2;--s:#1e2d23;--g:#6b7280;--w:#fff;--bg:#f7fdf5;--b:#d8e8d4;--gold:#f59e0b;--r:16px}
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
 body{font-family:'Inter',sans-serif;color:var(--s);background:var(--w);overflow-x:hidden;cursor:none}
 a{text-decoration:none;color:inherit}img{display:block;max-width:100%;height:auto}button,input,select,textarea{font-family:inherit;cursor:none}
-#dot{position:fixed;width:10px;height:10px;background:var(--p);border-radius:50%;pointer-events:none;z-index:99999;transform:translate(-50%,-50%);transition:width .2s cubic-bezier(.23,1,.32,1),height .2s cubic-bezier(.23,1,.32,1),background .2s,border-radius .2s,opacity .2s}
-#rng{position:fixed;width:42px;height:42px;border:2px solid var(--p);border-radius:50%;pointer-events:none;z-index:99998;transform:translate(-50%,-50%);transition:all .25s cubic-bezier(.23,1,.32,1);opacity:.45}
-body.ch #dot{width:6px;height:6px;background:var(--pd);opacity:.6}
-body.ch #rng{border-color:var(--pd);background:rgba(92,196,77,.08);opacity:.7}
-body.ct #dot{width:3px;height:22px;border-radius:2px;background:var(--pd)}body.ct #rng{opacity:0}
+#dot{position:fixed;width:12px;height:12px;background:var(--p);border-radius:50%;pointer-events:none;z-index:99999;transform:translate(-50%,-50%);box-shadow:0 0 10px rgba(92,196,77,.6),0 0 20px rgba(92,196,77,.3);transition:width .15s,height .15s,background .15s}
+#rng{position:fixed;width:44px;height:44px;border:2px solid rgba(92,196,77,.6);border-radius:50%;pointer-events:none;z-index:99998;transform:translate(-50%,-50%);opacity:.55;background:transparent}
+body.ch #dot{width:8px;height:8px;background:var(--w);box-shadow:0 0 12px rgba(255,255,255,.8),0 0 24px rgba(92,196,77,.5)}
+body.ch #rng{border-color:var(--p);background:rgba(92,196,77,.08);opacity:.85}
+body.ct #dot{width:3px;height:24px;border-radius:2px;background:var(--pd);box-shadow:none}body.ct #rng{opacity:0}
 @media(max-width:768px){body{cursor:auto}#dot,#rng{display:none}}
 nav{position:fixed;top:0;left:0;right:0;padding:0 60px;height:72px;display:flex;justify-content:space-between;align-items:center;background:rgba(255,255,255,.95);backdrop-filter:blur(14px);z-index:1000;border-bottom:1px solid rgba(0,0,0,.05);transition:box-shadow .3s}nav.sc{box-shadow:0 2px 12px rgba(30,60,30,.06)}
-.logo{font-family:'Playfair Display',serif;font-weight:700;font-size:24px;color:var(--p)}.nl{display:flex;gap:24px;list-style:none}.nl a{font-size:14px;font-weight:500;transition:color .2s}.nl a:hover{color:var(--pd)}.np{font-size:14px;font-weight:700}.np:hover{color:var(--pd)}.nc{padding:10px 22px;background:var(--p);color:var(--w);border-radius:32px;font-size:14px;font-weight:700;transition:all .2s;border:none}.nc:hover{background:var(--pd);transform:translateY(-1px)}.hb{display:none;flex-direction:column;gap:5px;background:none;border:none;padding:8px}.hb span{width:24px;height:2px;background:var(--s);border-radius:2px}
+.logo{font-family:'Playfair Display',serif;font-weight:700;font-size:24px;color:var(--p)}.logo img{height:40px}
+.nl{display:flex;gap:24px;list-style:none}.nl a{font-size:14px;font-weight:500;transition:color .2s}.nl a:hover{color:var(--pd)}
+.np{font-size:14px;font-weight:700}.np:hover{color:var(--pd)}
+.nc{padding:10px 22px;background:var(--p);color:var(--w);border-radius:32px;font-size:14px;font-weight:700;transition:all .2s;border:none}.nc:hover{background:var(--pd);transform:translateY(-1px)}
+.hb{display:none;flex-direction:column;gap:5px;background:none;border:none;padding:8px}.hb span{width:24px;height:2px;background:var(--s);border-radius:2px}
 .mm{display:none;position:fixed;top:72px;left:0;right:0;bottom:0;background:var(--w);z-index:999;padding:20px;flex-direction:column;gap:8px}.mm.op{display:flex}.mm a{display:block;padding:14px 16px;font-size:16px;font-weight:600;border-radius:10px}
-.hero{position:relative;min-height:100vh;display:flex;align-items:center;padding:100px 60px 60px;background:linear-gradient(135deg,var(--s) 0%,#24392f 50%,var(--p) 100%);overflow:hidden}.hi{max-width:1280px;margin:0 auto;width:100%;display:grid;grid-template-columns:1fr 1.1fr;gap:60px;align-items:center;position:relative;z-index:2}.hc{color:var(--w)}.hs{display:inline-flex;align-items:center;gap:16px;background:rgba(92,196,77,.15);border:1px solid rgba(92,196,77,.35);border-radius:60px;padding:14px 28px;margin-bottom:28px;animation:fu .8s ease}.hsn{font-size:48px;font-weight:800;color:var(--p);line-height:1}.hst{font-size:15px;font-weight:500;color:rgba(255,255,255,.85);line-height:1.3}.hero h1{font-family:'Playfair Display',serif;font-size:56px;line-height:1.1;margin-bottom:20px;animation:fu .8s ease .1s both}.hero h1 em{font-style:normal;color:var(--p)}.hd{font-size:17px;line-height:1.7;color:rgba(255,255,255,.75);margin-bottom:36px;max-width:500px;animation:fu .8s ease .2s both}.ha{display:flex;gap:16px;flex-wrap:wrap;animation:fu .8s ease .3s both}.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:32px;font-size:15px;font-weight:700;transition:all .25s;border:2px solid transparent}.bp{background:var(--p);color:var(--w);border-color:var(--p)}.bp:hover{background:var(--pd);border-color:var(--pd);transform:translateY(-2px);box-shadow:0 8px 24px rgba(92,196,77,.3)}.bo{background:transparent;color:var(--w);border-color:rgba(255,255,255,.3)}.bo:hover{border-color:var(--p);color:var(--p);transform:translateY(-2px)}.him{border-radius:20px;overflow:hidden;box-shadow:0 24px 64px rgba(0,0,0,.3);animation:fu .8s ease .2s both;aspect-ratio:4/3}.him img{width:100%;height:100%;object-fit:cover}@keyframes fu{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
-.mort{background:linear-gradient(135deg,#1a3f1e,#0d260f);position:relative;overflow:hidden}.mort::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(92,196,77,.15),transparent 60%)}.mi2{max-width:1280px;margin:0 auto;padding:52px 60px;display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap;position:relative;z-index:2}.mt{color:var(--w);flex:1;min-width:280px}.mt h2{font-family:'Playfair Display',serif;font-size:40px;font-weight:700;margin-bottom:10px;text-shadow:0 0 40px rgba(92,196,77,.4)}.mt h2 span{color:#7dff6a;text-shadow:0 0 30px rgba(92,196,77,.6),0 0 60px rgba(92,196,77,.3)}.mt p{font-size:16px;color:rgba(255,255,255,.75)}.mbs{display:flex;gap:16px;flex-wrap:wrap}.mb{background:rgba(92,196,77,.08);border:1px solid rgba(92,196,77,.25);border-radius:14px;padding:16px 28px;text-align:center;color:var(--w);transition:all .25s;min-width:110px}.mb:hover{background:rgba(92,196,77,.15);transform:translateY(-3px);box-shadow:0 8px 24px rgba(92,196,77,.2)}.mb a{color:var(--w);font-size:20px;font-weight:800;display:block}.mb .bs{font-size:11px;color:rgba(255,255,255,.5);margin-top:4px}
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;padding:100px 60px 60px;background:linear-gradient(135deg,var(--s) 0%,#24392f 50%,var(--p) 100%);overflow:hidden}
+.hi{max-width:1280px;margin:0 auto;width:100%;display:grid;grid-template-columns:1fr 1.1fr;gap:60px;align-items:center;position:relative;z-index:2}
+.hc{color:var(--w)}.hs{display:inline-flex;align-items:center;gap:16px;background:rgba(92,196,77,.15);border:1px solid rgba(92,196,77,.35);border-radius:60px;padding:14px 28px;margin-bottom:28px;animation:fu .8s ease}
+.hsn{font-size:48px;font-weight:800;color:var(--p);line-height:1}.hst{font-size:15px;font-weight:500;color:rgba(255,255,255,.85);line-height:1.3}
+.hero h1{font-family:'Playfair Display',serif;font-size:56px;line-height:1.1;margin-bottom:20px;animation:fu .8s ease .1s both}.hero h1 em{font-style:normal;color:var(--p)}
+.hd{font-size:17px;line-height:1.7;color:rgba(255,255,255,.75);margin-bottom:36px;max-width:500px;animation:fu .8s ease .2s both}
+.ha{display:flex;gap:16px;flex-wrap:wrap;animation:fu .8s ease .3s both}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:32px;font-size:15px;font-weight:700;transition:all .25s;border:2px solid transparent}
+.bp{background:var(--p);color:var(--w);border-color:var(--p)}.bp:hover{background:var(--pd);border-color:var(--pd);transform:translateY(-2px);box-shadow:0 8px 24px rgba(92,196,77,.3)}
+.bo{background:transparent;color:var(--w);border-color:rgba(255,255,255,.3)}.bo:hover{border-color:var(--p);color:var(--p);transform:translateY(-2px)}
+.him{border-radius:20px;overflow:hidden;box-shadow:0 24px 64px rgba(0,0,0,.3);animation:fu .8s ease .2s both;aspect-ratio:4/3}.him img{width:100%;height:100%;object-fit:cover}
+@keyframes fu{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+.mort{background:linear-gradient(135deg,#1a3f1e,#0d260f);position:relative;overflow:hidden}
+.mort::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(92,196,77,.15),transparent 60%)}
+.mi2{max-width:1280px;margin:0 auto;padding:52px 60px;display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap;position:relative;z-index:2}
+.mt{color:var(--w);flex:1;min-width:280px}.mt h2{font-family:'Playfair Display',serif;font-size:40px;font-weight:700;margin-bottom:10px;text-shadow:0 0 40px rgba(92,196,77,.4)}.mt h2 span{color:#7dff6a;text-shadow:0 0 30px rgba(92,196,77,.6),0 0 60px rgba(92,196,77,.3)}.mt p{font-size:16px;color:rgba(255,255,255,.75);line-height:1.6}
+.mbs{display:flex;gap:16px;flex-wrap:wrap}.mb{background:rgba(92,196,77,.08);border:1px solid rgba(92,196,77,.25);border-radius:14px;padding:16px 28px;text-align:center;color:var(--w);transition:all .25s;min-width:110px}.mb:hover{background:rgba(92,196,77,.15);transform:translateY(-3px);box-shadow:0 8px 24px rgba(92,196,77,.2)}.mb a{color:var(--w);font-size:20px;font-weight:800;display:block}.mb .bs{font-size:11px;color:rgba(255,255,255,.5);margin-top:4px}
 section{padding:80px 60px}.si{max-width:1280px;margin:0 auto}.st{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--p);font-weight:700;margin-bottom:10px}.sh{font-family:'Playfair Display',serif;font-size:42px;line-height:1.2;margin-bottom:12px}.ss{font-size:16px;color:var(--g);line-height:1.7;max-width:520px}
 .svc{background:var(--pl)}.sg{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:48px}.sc2{background:var(--w);border-radius:20px;overflow:hidden;box-shadow:0 2px 12px rgba(30,60,30,.06);transition:all .3s;border:1px solid var(--b)}.sc2:hover{transform:translateY(-6px);box-shadow:0 16px 48px rgba(30,60,30,.12);border-color:var(--p)}.sim{height:220px;overflow:hidden}.sim img{width:100%;height:100%;object-fit:cover;transition:transform .5s}.sc2:hover .sim img{transform:scale(1.07)}.sb2{padding:24px}.sb2 h3{font-size:20px;font-weight:700;margin-bottom:8px}.sb2 p{color:var(--g);font-size:14px;line-height:1.6}
 .wu{background:var(--w)}.wg{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:48px}.wc{padding:28px;border-radius:var(--r);background:var(--pl);border:1px solid var(--b);transition:all .3s;position:relative;overflow:hidden}.wc::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:var(--p)}.wc:hover{border-color:var(--p);transform:translateY(-4px);box-shadow:0 8px 32px rgba(30,60,30,.08)}.wc h4{font-size:18px;font-weight:700;margin-bottom:8px;color:var(--pd)}.wc p{font-size:14px;line-height:1.6}
@@ -32,143 +51,296 @@ section{padding:80px 60px}.si{max-width:1280px;margin:0 auto}.st{font-size:12px;
 .mo{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);backdrop-filter:blur(6px);z-index:2000;align-items:center;justify-content:center;padding:20px}.mo.op{display:flex}.mdl{background:var(--w);border-radius:20px;max-width:920px;width:100%;max-height:90vh;overflow-y:auto;position:relative;animation:mi .3s ease}@keyframes mi{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.mx{position:absolute;top:16px;right:16px;width:40px;height:40px;border-radius:50%;background:rgba(0,0,0,.5);border:none;font-size:20px;color:var(--w);z-index:10;display:flex;align-items:center;justify-content:center}.mx:hover{background:rgba(0,0,0,.7)}.mg{position:relative;height:420px;overflow:hidden;background:#111}.mg img{width:100%;height:100%;object-fit:cover}.mdt{position:absolute;bottom:14px;left:50%;transform:translateX(-50%);display:flex;gap:6px}.mdt span{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.4);transition:all .2s}.mdt span.a{background:var(--w);width:24px;border-radius:4px}.mn2{position:absolute;top:50%;transform:translateY(-50%);width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.85);border:none;font-size:18px;display:flex;align-items:center;justify-content:center}.mn2.pr{left:12px}.mn2.nx{right:12px}.mbd{padding:28px}.mbd h3{font-family:'Playfair Display',serif;font-size:28px;font-weight:700;margin-bottom:6px}.mpr{font-size:22px;font-weight:800;color:var(--pd);margin-bottom:16px}.msp{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px}.msi{background:var(--pl);padding:14px;border-radius:12px;text-align:center}.msi strong{display:block;font-size:18px}.msi small{font-size:12px;color:var(--g)}
 .cw{position:relative;margin-top:40px;overflow:hidden;border-radius:var(--r)}.ct3{display:flex;gap:16px;transition:transform .4s ease}.ct3.drag{transition:none}.ct3 img{flex:0 0 300px;height:220px;object-fit:cover;border-radius:12px;box-shadow:0 2px 12px rgba(30,60,30,.06)}.cbt{position:absolute;top:50%;transform:translateY(-50%);width:48px;height:48px;border-radius:50%;background:var(--w);border:1px solid var(--b);box-shadow:0 8px 32px rgba(30,60,30,.08);font-size:20px;z-index:5;display:flex;align-items:center;justify-content:center;transition:all .2s}.cbt:hover{background:var(--p);color:var(--w);border-color:var(--p)}.cbt.pr{left:12px}.cbt.nx{right:12px}
 .guar{background:var(--pl)}.gg{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:40px}.gc{padding:24px;border-radius:var(--r);background:var(--w);border:1px solid var(--b);transition:all .3s}.gc:hover{border-color:var(--p);transform:translateY(-4px);box-shadow:0 8px 32px rgba(30,60,30,.08)}.gc h4{font-size:18px;font-weight:700;margin-bottom:8px;color:var(--pd)}.gc p{font-size:14px;line-height:1.6}
-.rev{background:var(--w)}.rh{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:16px}.yl{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;background:var(--pl);border:1px solid var(--b);border-radius:32px;font-size:13px;font-weight:600;transition:all .2s}.yl:hover{border-color:var(--p);color:var(--pd)}.rt2{display:flex;gap:20px;transition:transform .4s ease}.rc{flex:0 0 380px;background:var(--pl);border:1px solid var(--b);border-radius:var(--r);padding:24px;transition:all .3s}.rc:hover{box-shadow:0 8px 32px rgba(30,60,30,.08);border-color:var(--p)}.rs2{color:var(--gold);font-size:14px;margin-bottom:6px;letter-spacing:2px}.rx{font-size:14px;line-height:1.65;margin-bottom:16px;font-style:italic;color:var(--s)}.rsrc{font-size:11px;color:var(--g);margin-bottom:12px}.rvi{display:flex;align-items:center;gap:12px}.rav{width:42px;height:42px;border-radius:50%;background:var(--p);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--w);font-size:16px}
+.rev{background:var(--w)}.rh{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:16px}.yl{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;background:var(--pl);border:1px solid var(--b);border-radius:32px;font-size:13px;font-weight:600;transition:all .2s}.yl:hover{border-color:var(--p);color:var(--pd)}.rt2{display:flex;gap:20px;transition:transform .4s ease}.rc{flex:0 0 380px;background:var(--pl);border:1px solid var(--b);border-radius:var(--r);padding:24px;transition:all .3s}.rc:hover{box-shadow:0 8px 32px rgba(30,60,30,.08);border-color:var(--p)}.rs2{color:var(--gold);font-size:14px;margin-bottom:6px;letter-spacing:2px}.rx{font-size:14px;line-height:1.65;margin-bottom:16px;font-style:italic;color:var(--s)}.rsrc{font-size:11px;color:var(--g);margin-bottom:12px}
 .faq{background:var(--pl)}.fl{max-width:780px;margin:40px auto 0}.fi{background:var(--w);border:1px solid var(--b);border-radius:14px;margin-bottom:10px;overflow:hidden}.fi:hover{border-color:var(--p)}.fq{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;font-weight:600;font-size:15px}.fic{width:28px;height:28px;border-radius:50%;background:var(--pl);display:flex;align-items:center;justify-content:center;font-size:16px;color:var(--p);transition:all .3s;flex-shrink:0}.fi.op .fic{background:var(--p);color:var(--w);transform:rotate(45deg)}.fa{max-height:0;overflow:hidden;transition:max-height .3s,padding .3s;padding:0 20px}.fi.op .fa{max-height:300px;padding:0 20px 16px}.fa p{font-size:14px;color:var(--g);line-height:1.7}
 .calc{background:var(--w)}.cg{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:40px}.cf{background:var(--pl);border:1px solid var(--b);border-radius:var(--r);padding:28px}.fr{margin-bottom:18px}.fr label{display:block;font-size:14px;font-weight:500;margin-bottom:8px}.fr select{width:100%;padding:12px 14px;border:1px solid var(--b);border-radius:8px;background:var(--w);font-size:14px;outline:none;font-family:inherit}.fr input[type=range]{width:100%;accent-color:var(--p);margin-top:6px}.rnv{font-weight:800;color:var(--pd)}.cbn{width:100%;padding:14px;background:var(--p);color:var(--w);border:none;border-radius:10px;font-size:15px;font-weight:700;transition:all .2s;margin-top:8px}.cbn:hover{background:var(--pd);transform:translateY(-2px)}.cr{background:var(--pl);border:1px solid var(--b);border-radius:var(--r);padding:28px;display:flex;flex-direction:column;justify-content:center}.cpb{font-size:48px;font-weight:800;margin-bottom:24px}.cpb span{color:var(--p)}.cl{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--b);font-size:14px}.cl:last-child{border-bottom:none}
 .con{background:var(--s);color:var(--w)}.con .sh{color:var(--w)}.con .ss{color:rgba(255,255,255,.6)}.cog{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:40px}.ci{display:flex;align-items:flex-start;gap:14px;margin-bottom:22px}.cib{width:44px;height:44px;background:rgba(92,196,77,.12);border:1px solid rgba(92,196,77,.2);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}.ci h4{font-size:11px;font-weight:600;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}.ci a{color:var(--w);transition:color .2s}.ci a:hover{color:var(--p)}.mc{margin-top:24px;border-radius:var(--r);overflow:hidden;height:220px;border:1px solid rgba(255,255,255,.1)}.mc iframe{width:100%;height:100%;border:none}.cfb{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:28px}.cfb h3{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;margin-bottom:20px}.fgr{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}.cin{padding:12px 14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:8px;color:var(--w);font-size:14px;outline:none;font-family:inherit;width:100%}.cin::placeholder{color:rgba(255,255,255,.35)}.cin:focus{border-color:var(--p)}.msi2{grid-column:1/-1;resize:none;min-height:80px}.csr{display:flex;align-items:flex-start;gap:10px;margin:14px 0;font-size:12px;color:rgba(255,255,255,.5);line-height:1.5}.csr input[type=checkbox]{accent-color:var(--p);margin-top:2px;flex-shrink:0;cursor:none}.csr a{color:var(--p);text-decoration:underline}.sbn{width:100%;padding:14px;background:var(--p);color:var(--w);border:none;border-radius:10px;font-size:15px;font-weight:700;transition:all .2s}.sbn:hover{background:var(--pd);transform:translateY(-2px)}.sbn:disabled{opacity:.5;transform:none}
 .tgf{position:fixed;bottom:24px;right:24px;width:56px;height:56px;border-radius:50%;background:#229ED9;color:var(--w);display:flex;align-items:center;justify-content:center;font-size:24px;box-shadow:0 6px 24px rgba(34,158,217,.4);z-index:999;transition:all .2s}.tgf:hover{transform:scale(1.1)}
 footer{background:var(--s);color:rgba(255,255,255,.5);border-top:1px solid rgba(255,255,255,.08)}.fti{max-width:1280px;margin:0 auto;padding:32px 60px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;font-size:13px}.fti a{color:rgba(255,255,255,.5);transition:color .2s}.fti a:hover{color:var(--p)}
 .rv2{opacity:0;transform:translateY(24px);transition:opacity .6s,transform .6s}.rv2.vis{opacity:1;transform:translateY(0)}
+.ctb{width:100%;border-collapse:collapse;margin-top:36px;font-size:14px;border-radius:var(--r);overflow:hidden;box-shadow:0 2px 12px rgba(30,60,30,.06)}.ctb th,.ctb td{padding:14px 18px;text-align:left}.ctb thead th{background:var(--pd);color:var(--w);font-weight:700}.ctb tbody tr{background:var(--w)}.ctb tbody tr:nth-child(even){background:var(--bg)}.ctb td:first-child{font-weight:600}
 @media(max-width:1024px){.sg,.wg,.gg{grid-template-columns:repeat(2,1fr)}.hi{grid-template-columns:1fr}.hero h1{font-size:44px}}
 @media(max-width:768px){nav{padding:0 20px}.nl,.np{display:none}.hb{display:flex}section{padding:60px 20px}.hero{padding:100px 20px 60px}.hero h1{font-size:36px}.sh{font-size:32px}.mi2{padding:32px 20px;flex-direction:column;text-align:center}.mbs{justify-content:center}.mt h2{font-size:28px}.sg,.wg,.gg,.pg,.cg,.cog{grid-template-columns:1fr}.mg{height:260px}.rc{flex:0 0 300px}.fti{flex-direction:column;text-align:center;padding:24px 20px}}
 </style>
 </head>
 <body>
 <div id="dot"></div><div id="rng"></div>
-<nav id="nb"><a href="#" class="logo"><img src="hero/logo.png" alt="ЭкоКаркас" style="height:40px" onerror="this.outerHTML='<span style=\'font-family:Playfair Display,serif;font-weight:700;font-size:24px;color:var(--p)\'>ЭкоКаркас</span>'"></a><ul class="nl"><li><a href="#services">Услуги</a></li><li><a href="#portfolio">Проекты</a></li><li><a href="#process">Стройка</a></li><li><a href="#reviews">Отзывы</a></li><li><a href="#calculator">Расчёт</a></li><li><a href="#contacts">Контакты</a></li></ul><a href="tel:+79932707373" class="np">📞 +7 (993) 270-73-73</a><a href="#contacts" class="nc">Заявка</a><button class="hb" id="hbBtn"><span></span><span></span><span></span></button></nav>
-<div class="mm" id="mm"><a href="#services" onclick="cmm()">Услуги</a><a href="#portfolio" onclick="cmm()">Проекты</a><a href="#process" onclick="cmm()">Стройка</a><a href="#reviews" onclick="cmm()">Отзывы</a><a href="#calculator" onclick="cmm()">Расчёт</a><a href="#contacts" onclick="cmm()">Контакты</a><a href="tel:+79932707373">📞 +7 (993) 270-73-73</a><a href="https://t.me/ecokarkass" target="_blank">Telegram</a></div>
 
-<section class="hero"><div class="hi"><div class="hc"><div class="hs"><div class="hsn">64</div><div class="hst">дома построено<br>в Московской области</div></div><h1>Строим дом, в котором <em>хочется жить</em></h1><p class="hd">Каркасные, газоблочные и модульные дома под ключ. Прозрачные цены, семейная ипотека.<br><a href="tel:+79932707373" style="color:var(--p);font-weight:700">+7 (993) 270-73-73</a></p><div class="ha"><a href="#calculator" class="btn bp">Рассчитать стоимость</a><a href="#portfolio" class="btn bo">Проекты →</a></div></div><div class="him"><img src="hero/hero-main.jpg" alt="ЭкоКаркас" onerror="this.src='https://images.unsplash.com/photo-1600585154340-be6161a56c0c?w=800&q=80'"></div></div></section>
+<nav id="nb">
+  <a href="#" class="logo"><img src="1213.jpg" alt="ЭкоКаркас" onerror="this.outerHTML='ЭкоКаркас'"></a>
+  <ul class="nl"><li><a href="#services">Услуги</a></li><li><a href="#portfolio">Проекты</a></li><li><a href="#process">Стройка</a></li><li><a href="#reviews">Отзывы</a></li><li><a href="#calculator">Расчёт</a></li><li><a href="#contacts">Контакты</a></li></ul>
+  <a href="tel:+79932707373" class="np">📞 270-73-73</a>
+  <a href="tel:+79932707272" class="np">📞 270-72-72</a>
+  <a href="#contacts" class="nc">Заявка</a>
+  <button class="hb" id="hbBtn"><span></span><span></span><span></span></button>
+</nav>
+<div class="mm" id="mm"><a href="#services" onclick="cmm()">Услуги</a><a href="#portfolio" onclick="cmm()">Проекты</a><a href="#process" onclick="cmm()">Стройка</a><a href="#reviews" onclick="cmm()">Отзывы</a><a href="#calculator" onclick="cmm()">Расчёт</a><a href="#contacts" onclick="cmm()">Контакты</a><a href="tel:+79932707373">📞 270-73-73</a><a href="tel:+79932707272">📞 270-72-72</a><a href="https://t.me/ecokarkass" target="_blank">Telegram</a></div>
 
-<div class="mort"><div class="mi2"><div class="mt"><h2>Работаем с <span>семейной ипотекой</span></h2><p>Ставка от 6% для семей с детьми. Помогаем оформить.</p></div><div class="mbs"><div class="mb"><a href="https://www.sberbank.ru/ru/person/credits/home/family" target="_blank">Сбербанк</a><div class="bs">Семейная ипотека</div></div><div class="mb"><a href="https://www.vtb.ru/personal/ipoteka/semejnaya-ipoteka/" target="_blank">ВТБ</a><div class="bs">Семейная ипотека</div></div><div class="mb"><a href="https://domrf.ru/mortgage/family/" target="_blank">Дом.РФ</a><div class="bs">Семейная ипотека</div></div></div></div></div>
+<section class="hero"><div class="hi"><div class="hc">
+  <div class="hs"><div class="hsn">64</div><div class="hst">дома построено<br>в Московской области</div></div>
+  <h1>Строим дом, в котором <em>хочется жить</em></h1>
+  <p class="hd">Каркасные, газоблочные и модульные дома под ключ. Прозрачные цены, семейная ипотека.<br><a href="tel:+79932707373" style="color:var(--p);font-weight:700">+7 (993) 270-73-73</a><br><a href="tel:+79932707272" style="color:var(--p);font-weight:700">+7 (993) 270-72-72</a></p>
+  <div class="ha"><a href="#calculator" class="btn bp">Рассчитать стоимость</a><a href="#portfolio" class="btn bo">Проекты →</a></div>
+</div><div class="him"><img src="1212.png" alt="ЭкоКаркас" onerror="this.src='https://images.unsplash.com/photo-1600585154340-be6161a56c0c?w=800&q=80'"></div></div></section>
 
-<section class="svc" id="services"><div class="si rv2"><div class="st">Услуги</div><h2 class="sh">Что мы строим</h2><p class="ss">От бани до семейного дома.</p><div class="sg"><div class="sc2"><div class="sim"><img src="services/karkas.jpg" alt="Каркасные" onerror="this.src='https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80'"></div><div class="sb2"><h3>Каркасные дома</h3><p>Лёгкие, энергоэффективные, быстрые.</p></div></div><div class="sc2"><div class="sim"><img src="services/gazoblok.jpg" alt="Газоблок" onerror="this.src='https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80'"></div><div class="sb2"><h3>Дома из газоблока</h3><p>Надёжность, тепло и стильный фасад.</p></div></div><div class="sc2"><div class="sim"><img src="services/modular.jpg" alt="Модульные" onerror="this.src='https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600&q=80'"></div><div class="sb2"><h3>Модульные дома</h3><p>Быстрая сборка, стильный дизайн.</p></div></div><div class="sc2"><div class="sim"><img src="services/banya.jpg" alt="Бани" onerror="this.src='https://images.unsplash.com/photo-1600573472592-401b489a3cdc?w=600&q=80'"></div><div class="sb2"><h3>Бани</h3><p>Парная, комната отдыха, терраса.</p></div></div></div></div></section>
+<div class="mort"><div class="mi2"><div class="mt"><h2>Работаем с <span>семейной ипотекой</span></h2><p>Ставка от 6% для семей с детьми.</p></div>
+<div class="mbs"><div class="mb"><a href="https://www.sberbank.ru/ru/person/credits/home/family" target="_blank">Сбербанк</a><div class="bs">Семейная ипотека</div></div><div class="mb"><a href="https://www.vtb.ru/personal/ipoteka/semejnaya-ipoteka/" target="_blank">ВТБ</a><div class="bs">Семейная ипотека</div></div><div class="mb"><a href="https://domrf.ru/mortgage/family/" target="_blank">Дом.РФ</a><div class="bs">Семейная ипотека</div></div></div></div></div>
 
-<section class="wu"><div class="si rv2"><div class="st">Почему мы</div><h2 class="sh">Что вы получаете</h2><div class="wg"><div class="wc"><div style="font-size:28px;margin-bottom:14px">📋</div><h4>Фиксированная смета</h4><p>Цена в договоре. Без доплат.</p></div><div class="wc"><div style="font-size:28px;margin-bottom:14px">🏗️</div><h4>Контроль онлайн</h4><p>Фото и видео еженедельно.</p></div><div class="wc"><div style="font-size:28px;margin-bottom:14px">📅</div><h4>Сроки в договоре</h4><p>Чёткий график. Акты приёмки.</p></div><div class="wc"><div style="font-size:28px;margin-bottom:14px">✅</div><h4>Качество материалов</h4><p>Проверенные поставщики.</p></div></div></div></section>
+<section class="svc" id="services"><div class="si rv2"><div class="st">Услуги</div><h2 class="sh">Что мы строим</h2><p class="ss">От бани до семейного дома.</p>
+<div class="sg">
+<div class="sc2"><div class="sim"><img src="services/karkas.jpg" alt="Каркасные" onerror="this.src='https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80'"></div><div class="sb2"><h3>Каркасные дома</h3><p>Лёгкие, энергоэффективные, быстрые.</p></div></div>
+<div class="sc2"><div class="sim"><img src="services/gazoblok.jpg" alt="Газоблок" onerror="this.src='https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80'"></div><div class="sb2"><h3>Дома из газоблока</h3><p>Надёжность, тепло и стильный фасад.</p></div></div>
+<div class="sc2"><div class="sim"><img src="services/modular.jpg" alt="Модульные" onerror="this.src='https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600&q=80'"></div><div class="sb2"><h3>Модульные дома</h3><p>Быстрая сборка, стильный дизайн.</p></div></div>
+<div class="sc2"><div class="sim"><img src="services/banya.jpg" alt="Бани" onerror="this.src='https://images.unsplash.com/photo-1600573472592-401b489a3cdc?w=600&q=80'"></div><div class="sb2"><h3>Бани</h3><p>Парная, комната отдыха, терраса.</p></div></div>
+</div></div></section>
 
-<section class="pf" id="portfolio"><div class="si rv2"><div class="st">Портфолио</div><h2 class="sh">Наши проекты</h2><p class="ss">Дома с планировками и ценами.</p><div class="pt"><button class="ptb act" data-f="all">Все</button><button class="ptb" data-f="karkas">Каркасные</button><button class="ptb" data-f="gazoblok">Газоблок</button><button class="ptb" data-f="modular">Модульные</button><button class="ptb" data-f="banya">Бани</button></div><div class="pg" id="pgr"></div></div></section>
+<section class="wu"><div class="si rv2"><div class="st">Почему мы</div><h2 class="sh">Что вы получаете</h2>
+<div class="wg">
+<div class="wc"><div style="font-size:28px;margin-bottom:14px">📋</div><h4>Фиксированная смета</h4><p>Цена в договоре. Без доплат.</p></div>
+<div class="wc"><div style="font-size:28px;margin-bottom:14px">🏗️</div><h4>Контроль онлайн</h4><p>Фото и видео еженедельно.</p></div>
+<div class="wc"><div style="font-size:28px;margin-bottom:14px">📅</div><h4>Сроки в договоре</h4><p>Чёткий график. Акты приёмки.</p></div>
+<div class="wc"><div style="font-size:28px;margin-bottom:14px">✅</div><h4>Качество материалов</h4><p>Проверенные поставщики.</p></div>
+</div></div></section>
 
-<section style="padding:80px 60px;background:var(--w)" id="process"><div class="si rv2"><div class="st">Фотоотчёт</div><h2 class="sh">Процесс строительства</h2><p class="ss">Реальные фото со строек.</p><div class="cw"><button class="cbt pr" id="pp">‹</button><div class="ct3" id="ptt"></div><button class="cbt nx" id="pn">›</button></div></div></section>
+<section class="pf" id="portfolio"><div class="si rv2"><div class="st">Портфолио</div><h2 class="sh">Наши проекты</h2><p class="ss">Дома с планировками и ценами.</p>
+<div class="pt"><button class="ptb act" data-f="all">Все</button><button class="ptb" data-f="karkas">Каркасные</button><button class="ptb" data-f="gazoblok">Газоблок</button><button class="ptb" data-f="modular">Модульные</button><button class="ptb" data-f="banya">Бани</button></div>
+<div class="pg" id="pgr"></div></div></section>
 
-<section class="guar"><div class="si rv2"><div class="st">Гарантии</div><h2 class="sh">Гарантии и договор</h2><div class="gg"><div class="gc"><div style="font-size:28px;margin-bottom:12px">🏦</div><h4>Семейная ипотека</h4><p>Сбербанк, ВТБ, Дом.РФ.</p></div><div class="gc"><div style="font-size:28px;margin-bottom:12px">🛡️</div><h4>Гарантия 3 года</h4><p>Конструктив и отделка.</p></div><div class="gc"><div style="font-size:28px;margin-bottom:12px">💰</div><h4>Фиксированная цена</h4><p>Без доплат.</p></div><div class="gc"><div style="font-size:28px;margin-bottom:12px">📞</div><h4>Поддержка</h4><p><a href="tel:+79932707373" style="color:var(--pd)">+7 (993) 270-73-73</a></p></div></div></div></section>
+<section style="padding:80px 60px;background:var(--w)" id="process"><div class="si rv2"><div class="st">Фотоотчёт</div><h2 class="sh">Процесс строительства</h2><p class="ss">Реальные фото со строек.</p>
+<div class="cw"><button class="cbt pr" id="pp">&#8249;</button><div class="ct3" id="ptt"></div><button class="cbt nx" id="pn">&#8250;</button></div></div></section>
 
-<section class="rev" id="reviews"><div class="si rv2"><div class="rh"><div><div class="st">Отзывы</div><h2 class="sh">Что говорят клиенты</h2></div><a href="https://yandex.ru/maps/10725/domodedovo/search/%D0%AD%D0%BA%D0%BE%D0%9A%D0%B0%D1%80%D0%BA%D0%B0%D1%81" target="_blank" class="yl">⭐ Все отзывы на Яндекс.Картах →</a></div><div class="cw"><button class="cbt pr" id="rp">‹</button><div class="rt2" id="rtt"></div><button class="cbt nx" id="rn">›</button></div></div></section>
+<section class="guar"><div class="si rv2"><div class="st">Гарантии</div><h2 class="sh">Гарантии и договор</h2>
+<div class="gg">
+<div class="gc"><div style="font-size:28px;margin-bottom:12px">🏦</div><h4>Семейная ипотека</h4><p>Сбербанк, ВТБ, Дом.РФ.</p></div>
+<div class="gc"><div style="font-size:28px;margin-bottom:12px">🛡️</div><h4>Гарантия 3 года</h4><p>Конструктив и отделка.</p></div>
+<div class="gc"><div style="font-size:28px;margin-bottom:12px">💰</div><h4>Фиксированная цена</h4><p>Без доплат.</p></div>
+<div class="gc"><div style="font-size:28px;margin-bottom:12px">📞</div><h4>Поддержка</h4><p><a href="tel:+79932707373" style="color:var(--pd)">270-73-73</a> / <a href="tel:+79932707272" style="color:var(--pd)">270-72-72</a></p></div>
+</div></div></section>
+
+<section class="rev" id="reviews"><div class="si rv2">
+<div class="rh"><div><div class="st">Отзывы</div><h2 class="sh">Что говорят клиенты</h2></div>
+<a href="https://yandex.ru/maps/10725/domodedovo/search/%D0%AD%D0%BA%D0%BE%D0%9A%D0%B0%D1%80%D0%BA%D0%B0%D1%81" target="_blank" class="yl">&#11088; Яндекс.Карты &#8594;</a></div>
+<div class="cw"><button class="cbt pr" id="rp">&#8249;</button><div class="rt2" id="rtt"></div><button class="cbt nx" id="rn">&#8250;</button></div></div></section>
 
 <section class="faq"><div class="si rv2"><div class="st" style="text-align:center">Вопросы</div><h2 class="sh" style="text-align:center">Частые вопросы</h2><div class="fl" id="ffl"></div></div></section>
 
-<section class="calc" id="calculator"><div class="si rv2"><div class="st">Калькулятор</div><h2 class="sh">Рассчитайте стоимость</h2><div class="cg"><div class="cf"><div class="fr"><label>Тип</label><select id="cT"><option value="karkas">Каркасный</option><option value="gazoblok">Газоблок</option><option value="modular">Модульный</option><option value="banya">Баня</option></select></div><div class="fr"><label>Площадь: <span class="rnv" id="aV">100</span> м²</label><input type="range" id="cA" min="30" max="300" value="100"></div><div class="fr"><label>Этажи</label><select id="cF"><option value="1">1</option><option value="2" selected>2</option><option value="3">3</option></select></div><button class="cbn" id="cB">Рассчитать</button></div><div class="cr"><div style="font-size:13px;color:var(--g);margin-bottom:4px">Стоимость</div><div class="cpb"><span>₽</span> <span id="cP">0</span></div><div id="cBD"></div></div></div></div></section>
+<section class="calc" id="calculator"><div class="si rv2"><div class="st">Калькулятор</div><h2 class="sh">Рассчитайте стоимость</h2>
+<div class="cg"><div class="cf">
+<div class="fr"><label>Тип</label><select id="cT"><option value="karkas">Каркасный</option><option value="gazoblok">Газоблок</option><option value="modular">Модульный</option><option value="banya">Баня</option></select></div>
+<div class="fr"><label>Площадь: <span class="rnv" id="aV">100</span> м&#178;</label><input type="range" id="cA" min="30" max="300" value="100"></div>
+<div class="fr"><label>Этажи</label><select id="cF"><option value="1">1</option><option value="2" selected>2</option><option value="3">3</option></select></div>
+<button class="cbn" id="cB">Рассчитать</button>
+</div><div class="cr"><div style="font-size:13px;color:var(--g);margin-bottom:4px">Стоимость</div><div class="cpb"><span>&#8381;</span> <span id="cP">0</span></div><div id="cBD"></div></div></div></div></section>
 
-<section style="padding:80px 60px;background:var(--pl)"><div class="si rv2"><div class="st">Сравнение</div><h2 class="sh">Какой дом выбрать?</h2><table style="width:100%;border-collapse:collapse;margin-top:36px;font-size:14px;border-radius:var(--r);overflow:hidden;box-shadow:0 2px 12px rgba(30,60,30,.06)"><thead><tr style="background:var(--pd);color:var(--w)"><th style="padding:14px 18px;text-align:left">Параметр</th><th style="padding:14px 18px;text-align:left">Каркасный</th><th style="padding:14px 18px;text-align:left">Газоблок</th><th style="padding:14px 18px;text-align:left">Модульный</th></tr></thead><tbody><tr style="background:var(--w)"><td style="padding:14px 18px;font-weight:600">Цена/м²</td><td style="padding:14px 18px">от 65 000 ₽</td><td style="padding:14px 18px">от 75 000 ₽</td><td style="padding:14px 18px">от 55 000 ₽</td></tr><tr style="background:var(--bg)"><td style="padding:14px 18px;font-weight:600">Срок</td><td style="padding:14px 18px">2–4 мес.</td><td style="padding:14px 18px">4–6 мес.</td><td style="padding:14px 18px">1–2 мес.</td></tr><tr style="background:var(--w)"><td style="padding:14px 18px;font-weight:600">Теплоизоляция</td><td style="padding:14px 18px">Отличная</td><td style="padding:14px 18px">Хорошая</td><td style="padding:14px 18px">Хорошая</td></tr><tr style="background:var(--bg)"><td style="padding:14px 18px;font-weight:600">Долговечность</td><td style="padding:14px 18px">50+ лет</td><td style="padding:14px 18px">80+ лет</td><td style="padding:14px 18px">30+ лет</td></tr></tbody></table></div></section>
+<section style="padding:80px 60px;background:var(--pl)"><div class="si rv2"><div class="st">Сравнение</div><h2 class="sh">Какой дом выбрать?</h2>
+<table class="ctb"><thead><tr><th>Параметр</th><th>Каркасный</th><th>Газоблок</th><th>Модульный</th></tr></thead><tbody>
+<tr><td>Цена/м&#178;</td><td>от 65 000 &#8381;</td><td>от 75 000 &#8381;</td><td>от 55 000 &#8381;</td></tr>
+<tr><td>Срок</td><td>2&#8211;4 мес.</td><td>4&#8211;6 мес.</td><td>1&#8211;2 мес.</td></tr>
+<tr><td>Теплоизоляция</td><td>Отличная</td><td>Хорошая</td><td>Хорошая</td></tr>
+<tr><td>Долговечность</td><td>50+ лет</td><td>80+ лет</td><td>30+ лет</td></tr>
+</tbody></table></div></section>
 
-<section class="con" id="contacts"><div class="si rv2"><div class="st">Контакты</div><h2 class="sh">Свяжитесь с нами</h2><p class="ss">Ответим на все вопросы.</p><div class="cog"><div><div class="ci"><div class="cib">📞</div><div><h4>Телефон</h4><p><a href="tel:+79932707373">+7 (993) 270-73-73</a></p></div></div><div class="ci"><div class="cib">✉️</div><div><h4>Email</h4><p><a href="/cdn-cgi/l/email-protection#9df8fef2f6fceff6fceeafa9dde4fcf3f9f8e5b3efe8"><span class="__cf_email__" data-cfemail="dbbeb8b4b0baa9b0baa8e9ef9ba2bab5bfbea3f5a9ae">[email&#160;protected]</span></a></p></div></div><div class="ci"><div class="cib">💬</div><div><h4>Мессенджеры</h4><p><a href="https://t.me/ecokarkass" target="_blank">Telegram</a> / <a href="https://wa.me/79932707373" target="_blank">WhatsApp</a></p></div></div><div class="ci"><div class="cib">📍</div><div><h4>Адрес</h4><p>МО, г. Домодедово,<br>ул. 25 лет Октября, 18, корп. 14</p></div></div><div class="mc"><iframe src="https://yandex.ru/map-widget/v1/?ll=37.7675%2C55.4368&z=16&pt=37.7675%2C55.4368%2Cpm2gnm" allowfullscreen loading="lazy"></iframe></div></div><div class="cfb"><h3>Оставьте заявку</h3><div class="fgr"><input class="cin" id="fN" placeholder="Имя" required><input class="cin" id="fP" placeholder="Телефон" required><input class="cin" id="fE" placeholder="Email"><select class="cin" id="fS"><option value="">Что интересует?</option><option>Каркасный дом</option><option>Газоблок</option><option>Модульный</option><option>Баня</option><option>Другое</option></select><textarea class="cin msi2" id="fM" placeholder="Сообщение"></textarea></div><div class="csr"><input type="checkbox" id="cs" required><label for="cs">Даю согласие на <a href="#" id="pl">обработку данных</a> (ФЗ №152)</label></div><button class="sbn" id="sB" disabled>Отправить заявку</button></div></div></div></section>
+<section class="con" id="contacts"><div class="si rv2"><div class="st">Контакты</div><h2 class="sh">Свяжитесь с нами</h2><p class="ss">Ответим на все вопросы.</p>
+<div class="cog"><div>
+<div class="ci"><div class="cib">📞</div><div><h4>Телефон</h4><p><a href="tel:+79932707373">+7 (993) 270-73-73</a><br><a href="tel:+79932707272">+7 (993) 270-72-72</a></p></div></div>
+<div class="ci"><div class="cib">&#9993;</div><div><h4>Email</h4><p><a id="eml" href="#">загрузка...</a></p></div></div>
+<div class="ci"><div class="cib">💬</div><div><h4>Мессенджеры</h4><p><a href="https://t.me/ecokarkass" target="_blank">Telegram</a> / <a href="https://wa.me/79932707373" target="_blank">WhatsApp</a></p></div></div>
+<div class="ci"><div class="cib">📍</div><div><h4>Адрес</h4><p>МО, г. Домодедово,<br>ул. 25 лет Октября, 18, корп. 14</p></div></div>
+<div class="mc"><iframe src="https://yandex.ru/map-widget/v1/?ll=37.7675%2C55.4368&z=16&pt=37.7675%2C55.4368%2Cpm2gnm" allowfullscreen loading="lazy"></iframe></div>
+</div>
+<div class="cfb"><h3>Оставьте заявку</h3>
+<div class="fgr"><input class="cin" id="fN" placeholder="Имя" required><input class="cin" id="fP" placeholder="Телефон" required><input class="cin" id="fE" placeholder="Email"><select class="cin" id="fS"><option value="">Что интересует?</option><option>Каркасный дом</option><option>Газоблок</option><option>Модульный</option><option>Баня</option><option>Другое</option></select><textarea class="cin msi2" id="fM" placeholder="Сообщение"></textarea></div>
+<div class="csr"><input type="checkbox" id="cs" required><label for="cs">Даю согласие на <a href="#" id="pl">обработку данных</a> (ФЗ &#8470;152)</label></div>
+<button class="sbn" id="sB" disabled>Отправить заявку</button>
+</div></div></div></section>
 
-<a href="https://t.me/ecokarkass" target="_blank" class="tgf">✈</a>
-<footer><div class="fti"><span>© 2024–2026 ЭкоКаркас</span><div style="display:flex;gap:20px"><a href="tel:+79932707373">+7 (993) 270-73-73</a><a href="https://t.me/ecokarkass" target="_blank">Telegram</a><a href="https://wa.me/79932707373" target="_blank">WhatsApp</a></div></div></footer>
+<a href="https://t.me/ecokarkass" target="_blank" class="tgf">&#9992;</a>
 
-<div class="mo" id="pM"><div class="mdl" style="max-width:700px"><button class="mx" onclick="document.getElementById('pM').classList.remove('op')">✕</button><div class="mbd"><h3>Политика конфиденциальности</h3><p style="margin-top:16px;font-size:14px;color:var(--g);line-height:1.7"><b>1.</b> Сайт собирает данные для связи.<br><br><b>2.</b> Данные не передаются третьим лицам.<br><br><b>3.</b> Обработка для подготовки предложений.<br><br><b>4.</b> Защита данных от неправомерного доступа.<br><br><b>5.</b> Заполняя форму, вы соглашаетесь с ФЗ №152.<br><br>Контакты: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6401070b0f05160f05175650241d050a00011c4a1611">[email&#160;protected]</a>, +7 (993) 270-73-73<br>МО, г. Домодедово, ул. 25 лет Октября, 18, корп. 14</p></div></div></div>
-<div class="mo" id="prM"><div class="mdl"><button class="mx" id="prX">✕</button><div class="mg" id="mG"><img id="mI" src="" alt=""><button class="mn2 pr" id="mP">‹</button><button class="mn2 nx" id="mN">›</button><div class="mdt" id="mD"></div></div><div class="mbd" id="mB"></div></div></div>
+<footer><div class="fti"><span>&#169; 2024&#8211;2026 ЭкоКаркас</span><div style="display:flex;gap:20px"><a href="tel:+79932707373">270-73-73</a><a href="tel:+79932707272">270-72-72</a><a href="https://t.me/ecokarkass" target="_blank">Telegram</a><a href="https://wa.me/79932707373" target="_blank">WhatsApp</a></div></div></footer>
 
-<!-- ПРОЕКТЫ — ОТДЕЛЬНЫЙ ФАЙЛ -->
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="projects.js"></script>
+<div class="mo" id="pM"><div class="mdl" style="max-width:700px"><button class="mx" onclick="document.getElementById('pM').classList.remove('op')">&#10005;</button><div class="mbd"><h3>Политика конфиденциальности</h3><p style="margin-top:16px;font-size:14px;color:var(--g);line-height:1.7"><b>1.</b> Сайт собирает данные для связи.<br><br><b>2.</b> Данные не передаются третьим лицам.<br><br><b>3.</b> Обработка для подготовки предложений.<br><br><b>4.</b> Защита данных от неправомерного доступа.<br><br><b>5.</b> Заполняя форму, вы соглашаетесь с ФЗ &#8470;152.<br><br>Телефоны: +7(993)270-73-73, +7(993)270-72-72<br>МО, г. Домодедово, ул. 25 лет Октября, 18, корп. 14</p></div></div></div>
+<div class="mo" id="prM"><div class="mdl"><button class="mx" id="prX">&#10005;</button><div class="mg" id="mG"><img id="mI" src="" alt=""><button class="mn2 pr" id="mP">&#8249;</button><button class="mn2 nx" id="mN">&#8250;</button><div class="mdt" id="mD"></div></div><div class="mbd" id="mB"></div></div></div>
 
+<script src="projects.js"></script>
 <script>
+// EMAIL (защита от Cloudflare)
+(function(){var e='ecokarkas24'+'@'+'yandex.ru';var a=document.getElementById('eml');if(a){a.href='mailto:'+e;a.textContent=e}})();
+
 // CURSOR
-const dot=document.getElementById('dot'),rng2=document.getElementById('rng');
-let mx=0,my=0,rx=0,ry=0,magTarget=null;
-document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px'});
-(function a(){
-  if(magTarget){
-    const r=magTarget.getBoundingClientRect();
-    const cx=r.left+r.width/2,cy=r.top+r.height/2;
-    rx+=(cx-rx)*.18;ry+=(cy-ry)*.18;
-    rng2.style.left=rx+'px';rng2.style.top=ry+'px';
-    rng2.style.width=(r.width+16)+'px';rng2.style.height=(r.height+16)+'px';
-    rng2.style.borderRadius=(Math.min(r.height,40)+8)+'px';
-  }else{
-    rx+=(mx-rx)*.12;ry+=(my-ry)*.12;
-    rng2.style.left=rx+'px';rng2.style.top=ry+'px';
-    rng2.style.width='42px';rng2.style.height='42px';
-    rng2.style.borderRadius='50%';
+var dot=document.getElementById('dot'),rng2=document.getElementById('rng');
+var mx=0,my=0,rx=0,ry=0,rw=44,rh=44,rbr=22,magEl=null,locked=false;
+document.addEventListener('mousemove',function(e){
+  mx=e.clientX;my=e.clientY;
+  dot.style.left=mx+'px';dot.style.top=my+'px';
+  if(magEl&&locked){
+    var b=magEl.getBoundingClientRect();
+    if(mx<b.left-30||mx>b.right+30||my<b.top-30||my>b.bottom+30){
+      locked=false;magEl=null;document.body.classList.remove('ch');
+    }
   }
-  requestAnimationFrame(a);
+});
+(function loop(){
+  if(magEl&&locked){
+    var b=magEl.getBoundingClientRect();
+    var tcx=b.left+b.width/2,tcy=b.top+b.height/2;
+    var tw=b.width+18,th=b.height+14;
+    var cs=getComputedStyle(magEl);
+    var tbr=parseFloat(cs.borderRadius)||th/2;
+    rx+=(tcx-rx)*.14;ry+=(tcy-ry)*.14;
+    rw+=(tw-rw)*.14;rh+=(th-rh)*.14;
+    rbr+=((tbr>4?tbr+6:th/2)-rbr)*.14;
+  }else{
+    rx+=(mx-rx)*.1;ry+=(my-ry)*.1;
+    rw+=(44-rw)*.12;rh+=(44-rh)*.12;
+    rbr+=(22-rbr)*.12;
+  }
+  rng2.style.left=rx+'px';rng2.style.top=ry+'px';
+  rng2.style.width=rw+'px';rng2.style.height=rh+'px';
+  rng2.style.borderRadius=rbr+'px';
+  requestAnimationFrame(loop);
 })();
+
 function bc(){
-  const hoverSel='a,button,.sc2,.pc,.rc,.fq,.ptb,.mb,.gc,.wc,.btn,.nc,.cbt,.yl,.tgf,.sbn,.cbn,.cbtn';
-  document.querySelectorAll(hoverSel).forEach(e=>{
-    e.onmouseenter=()=>{document.body.classList.add('ch');magTarget=e};
-    e.onmouseleave=()=>{document.body.classList.remove('ch');magTarget=null};
+  var sel='a.btn,a.nc,a.bp,a.bo,button.ptb,button.cbt,button.cbn,button.sbn,a.yl,a.tgf,div.mb,div.sc2,div.pc,div.rc,div.gc,div.wc,div.fq';
+  document.querySelectorAll(sel).forEach(function(e){
+    e.addEventListener('mouseenter',function(){document.body.classList.add('ch');magEl=e;locked=true});
   });
-  document.querySelectorAll('input,textarea,select').forEach(e=>{
-    e.onmouseenter=()=>{document.body.classList.add('ct');document.body.classList.remove('ch');magTarget=null};
-    e.onmouseleave=()=>document.body.classList.remove('ct');
+  document.querySelectorAll('input,textarea,select').forEach(function(e){
+    e.addEventListener('mouseenter',function(){document.body.classList.add('ct');document.body.classList.remove('ch');magEl=null;locked=false});
+    e.addEventListener('mouseleave',function(){document.body.classList.remove('ct')});
   });
-}bc();
-window.addEventListener('scroll',()=>document.getElementById('nb').classList.toggle('sc',scrollY>40));
-document.getElementById('hbBtn').onclick=()=>document.getElementById('mm').classList.toggle('op');
+}
+bc();
+
+// NAV
+window.addEventListener('scroll',function(){document.getElementById('nb').classList.toggle('sc',scrollY>40)});
+document.getElementById('hbBtn').onclick=function(){document.getElementById('mm').classList.toggle('op')};
 function cmm(){document.getElementById('mm').classList.remove('op')}
-document.getElementById('pl').onclick=e=>{e.preventDefault();document.getElementById('pM').classList.add('op')};
-document.getElementById('pM').onclick=e=>{if(e.target===e.currentTarget)e.currentTarget.classList.remove('op')};
+document.getElementById('pl').onclick=function(e){e.preventDefault();document.getElementById('pM').classList.add('op')};
+document.getElementById('pM').onclick=function(e){if(e.target===e.currentTarget)e.currentTarget.classList.remove('op')};
 document.getElementById('cs').onchange=function(){document.getElementById('sB').disabled=!this.checked};
 
-// PORTFOLIO (использует projects из projects.js)
-const pgr=document.getElementById('pgr');
-function rp(fl){const l=fl==='all'?projects:projects.filter(x=>x.category===fl);pgr.innerHTML=l.map(x=>`<div class="pc" data-id="${x.id}"><div class="pth"><img src="${x.images[0]}" alt="${x.name}" onerror="this.src='${x.fallback}'"><div class="ptag">${x.price}</div></div><div class="pb"><h4>${x.name}</h4><div class="pm"><span>📐 ${x.area}</span><span>🏠 ${x.floors}</span><span>🛏️ ${x.bedrooms}</span></div><div class="po">Подробнее →</div></div></div>`).join('');pgr.querySelectorAll('.pc').forEach(c=>c.onclick=()=>{const x=projects.find(z=>z.id==c.dataset.id);if(x)om(x)});bc()}
-document.querySelectorAll('.ptb').forEach(t=>t.onclick=()=>{document.querySelectorAll('.ptb').forEach(x=>x.classList.remove('act'));t.classList.add('act');rp(t.dataset.f)});rp('all');
+// PORTFOLIO
+var pgr=document.getElementById('pgr');
+function rp(fl){
+  if(typeof projects==='undefined')return;
+  var l=fl==='all'?projects:projects.filter(function(x){return x.category===fl});
+  pgr.innerHTML=l.map(function(x){return '<div class="pc" data-id="'+x.id+'"><div class="pth"><img src="'+x.images[0]+'" alt="'+x.name+'" onerror="this.src=\''+x.fallback+'\'"><div class="ptag">'+x.price+'</div></div><div class="pb"><h4>'+x.name+'</h4><div class="pm"><span>&#128208; '+x.area+'</span><span>&#127968; '+x.floors+'</span><span>&#128716; '+x.bedrooms+'</span></div><div class="po">Подробнее &#8594;</div></div></div>'}).join('');
+  pgr.querySelectorAll('.pc').forEach(function(c){c.onclick=function(){var x=projects.find(function(z){return z.id==c.dataset.id});if(x)om(x)}});
+  bc();
+}
+document.querySelectorAll('.ptb').forEach(function(t){t.onclick=function(){document.querySelectorAll('.ptb').forEach(function(x){x.classList.remove('act')});t.classList.add('act');rp(t.dataset.f)}});
+rp('all');
 
-let mIs=[],mIdx=0;
-function om(x){mIs=x.images;mIdx=0;const img=document.getElementById('mI');img.src=mIs[0];img.onerror=()=>{img.src=x.fallback};document.getElementById('mD').innerHTML=mIs.map((_,i)=>`<span class="${i===0?'a':''}"></span>`).join('');document.getElementById('mB').innerHTML=`<h3>${x.name}</h3><div class="mpr">${x.price}</div><div class="msp"><div class="msi"><strong>${x.area}</strong><small>Площадь</small></div><div class="msi"><strong>${x.floors}</strong><small>Этажность</small></div><div class="msi"><strong>${x.bedrooms}</strong><small>Спальни</small></div></div><p style="font-size:14px;color:var(--g)">Звоните: <a href="tel:+79932707373" style="color:var(--pd);font-weight:700">+7 (993) 270-73-73</a></p>`;document.getElementById('prM').classList.add('op')}
-function umi(){document.getElementById('mI').src=mIs[mIdx];document.querySelectorAll('#mD span').forEach((d,i)=>d.classList.toggle('a',i===mIdx))}
-document.getElementById('mP').onclick=()=>{mIdx=(mIdx-1+mIs.length)%mIs.length;umi()};
-document.getElementById('mN').onclick=()=>{mIdx=(mIdx+1)%mIs.length;umi()};
-document.getElementById('prX').onclick=()=>document.getElementById('prM').classList.remove('op');
-document.getElementById('prM').onclick=e=>{if(e.target===e.currentTarget)e.currentTarget.classList.remove('op')};
+// PROJECT MODAL
+var mIs=[],mIdx=0;
+function om(x){
+  mIs=x.images;mIdx=0;
+  var img=document.getElementById('mI');img.src=mIs[0];img.onerror=function(){img.src=x.fallback};
+  document.getElementById('mD').innerHTML=mIs.map(function(_,i){return '<span class="'+(i===0?'a':'')+'"></span>'}).join('');
+  document.getElementById('mB').innerHTML='<h3>'+x.name+'</h3><div class="mpr">'+x.price+'</div><div class="msp"><div class="msi"><strong>'+x.area+'</strong><small>Площадь</small></div><div class="msi"><strong>'+x.floors+'</strong><small>Этажность</small></div><div class="msi"><strong>'+x.bedrooms+'</strong><small>Спальни</small></div></div><p style="font-size:14px;color:var(--g)">Звоните: <a href="tel:+79932707373" style="color:var(--pd);font-weight:700">270-73-73</a> / <a href="tel:+79932707272" style="color:var(--pd);font-weight:700">270-72-72</a></p>';
+  document.getElementById('prM').classList.add('op');
+}
+function umi(){document.getElementById('mI').src=mIs[mIdx];document.querySelectorAll('#mD span').forEach(function(d,i){d.classList.toggle('a',i===mIdx)})}
+document.getElementById('mP').onclick=function(){mIdx=(mIdx-1+mIs.length)%mIs.length;umi()};
+document.getElementById('mN').onclick=function(){mIdx=(mIdx+1)%mIs.length;umi()};
+document.getElementById('prX').onclick=function(){document.getElementById('prM').classList.remove('op')};
+document.getElementById('prM').onclick=function(e){if(e.target===e.currentTarget)e.currentTarget.classList.remove('op')};
 
 // PROCESS CAROUSEL
-const ptt=document.getElementById('ptt');let pld=0;
-for(let i=1;i<=200;i++){const img=document.createElement('img');img.src=`process/${i}.jpg`;img.alt=`${i}`;img.loading='lazy';img.onerror=function(){this.remove()};img.onload=function(){pld++};ptt.appendChild(img)}
-setTimeout(()=>{if(!pld){ptt.innerHTML='';['https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&q=80','https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=400&q=80','https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&q=80','https://images.unsplash.com/photo-1600585154340-be6161a56c0c?w=400&q=80','https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=400&q=80','https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=400&q=80'].forEach((s,i)=>{const im=document.createElement('img');im.src=s;im.alt=`${i+1}`;ptt.appendChild(im)})}},3000);
+var ptt=document.getElementById('ptt');var pld=0;
+for(var i=1;i<=200;i++){var img2=document.createElement('img');img2.src='process/'+i+'.jpg';img2.alt=''+i;img2.loading='lazy';img2.onerror=function(){this.remove()};img2.onload=function(){pld++};ptt.appendChild(img2)}
+setTimeout(function(){if(!pld){ptt.innerHTML='';['https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&q=80','https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=400&q=80','https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&q=80','https://images.unsplash.com/photo-1600585154340-be6161a56c0c?w=400&q=80','https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=400&q=80','https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=400&q=80'].forEach(function(s,j){var im=document.createElement('img');im.src=s;im.alt=''+(j+1);ptt.appendChild(im)})}},3000);
 
-function sC(tid,pid,nid,sw){let pos=0;const s=sw||316,tk=document.getElementById(tid);document.getElementById(pid).onclick=()=>{pos=Math.min(pos+s*2,0);tk.style.transform=`translateX(${pos}px)`};document.getElementById(nid).onclick=()=>{const m=-(tk.scrollWidth-tk.parentElement.offsetWidth);pos=Math.max(pos-s*2,m);tk.style.transform=`translateX(${pos}px)`};let dr=false,sx,ds;tk.onmousedown=e=>{dr=true;sx=e.pageX;ds=pos;tk.classList.add('drag')};document.addEventListener('mousemove',e=>{if(!dr)return;const m=-(tk.scrollWidth-tk.parentElement.offsetWidth);pos=Math.max(Math.min(ds+e.pageX-sx,0),m);tk.style.transform=`translateX(${pos}px)`});document.addEventListener('mouseup',()=>{dr=false;tk.classList.remove('drag')});tk.ontouchstart=e=>{dr=true;sx=e.touches[0].pageX;ds=pos};tk.ontouchmove=e=>{if(!dr)return;const m=-(tk.scrollWidth-tk.parentElement.offsetWidth);pos=Math.max(Math.min(ds+e.touches[0].pageX-sx,0),m);tk.style.transform=`translateX(${pos}px)`};tk.ontouchend=()=>dr=false}
+function sC(tid,pid,nid,sw){
+  var pos=0,s=sw||316,tk=document.getElementById(tid);
+  document.getElementById(pid).onclick=function(){pos=Math.min(pos+s*2,0);tk.style.transform='translateX('+pos+'px)'};
+  document.getElementById(nid).onclick=function(){var m=-(tk.scrollWidth-tk.parentElement.offsetWidth);pos=Math.max(pos-s*2,m);tk.style.transform='translateX('+pos+'px)'};
+  var dr=false,sx2,ds;
+  tk.onmousedown=function(e){dr=true;sx2=e.pageX;ds=pos;tk.classList.add('drag')};
+  document.addEventListener('mousemove',function(e){if(!dr)return;var m=-(tk.scrollWidth-tk.parentElement.offsetWidth);pos=Math.max(Math.min(ds+e.pageX-sx2,0),m);tk.style.transform='translateX('+pos+'px)'});
+  document.addEventListener('mouseup',function(){dr=false;tk.classList.remove('drag')});
+  tk.ontouchstart=function(e){dr=true;sx2=e.touches[0].pageX;ds=pos};
+  tk.ontouchmove=function(e){if(!dr)return;var m=-(tk.scrollWidth-tk.parentElement.offsetWidth);pos=Math.max(Math.min(ds+e.touches[0].pageX-sx2,0),m);tk.style.transform='translateX('+pos+'px)'};
+  tk.ontouchend=function(){dr=false};
+}
 sC('ptt','pp','pn',316);
 
-// РЕАЛЬНЫЕ ОТЗЫВЫ С ЯНДЕКС.КАРТ
-const revs=[
+// REVIEWS
+var revs=[
 {n:'Анна А.',d:'21 августа 2025',t:'Строили дом с ЭкоКаркас, получилось даже лучше, чем мечтали! Отдельное спасибо за террасу! Рекомендуем!'},
 {n:'Анастасия',d:'7 марта 2025',t:'Осуществили мечту нашей семьи. Построили прекрасный, теплый дом. Учтены все условия.'},
-{n:'Алевтина Сегал',d:'13 января',t:'Провели консультацию, все понравилось. Спасибо. Как все обдумаем будем обращаться.'},
+{n:'Алевтина Сегал',d:'13 января 2026',t:'Провели консультацию, все понравилось. Спасибо. Как все обдумаем будем обращаться.'},
 {n:'Алекс К.',d:'4 ноября 2024',t:'Отзывчивые и квалифицированные, посчитали стоимость дома, бесплатно предоставили типовые проекты, в том числе с расстановкой мебели.'},
 {n:'Евгений Милославский',d:'4 марта 2025',t:'Обсудили эскизный проект и утвердили планировку. Подобрали фасады и пирог стен. Заключили договор на проектирование каркасного дома.'},
 {n:'Пользователь А.',d:'5 марта 2025',t:'Ребята работают хорошо. Проконсультировали по строительству, рассказали про технологию. Сделали расчет типового дома. Рассказали на чем можно сэкономить, а на чем не стоит! Рекомендую!'},
 {n:'Татьяна Киселькова',d:'5 ноября 2024',t:'Выражаю огромную благодарность компании ЭКО КАРКАС, была под впечатлением от их работы! Учли все мои пожелания, разработали проект, предложили оптимальное решение. Вы осуществили мою мечту!'},
-{n:'Олеся Канаева',d:'2 декабря 2025',t:'Сравнила несколько компаний, здесь было наилучшее предложение. Все чётко — смета прозрачная, сроки соблюдены. Построили без проблем! Спасибо за отличную работу!'},
-{n:'Дмитрий Г.',d:'13 января',t:'Заказал баню, все сделали за 2 недели, из хороших материалов, качество отличное, всем рекомендую!'},
-{n:'Тим Новиков',d:'2 ноября 2025',t:'Два месяца назад построили наш каркасный дом, результат превзошёл все ожидания! Никаких задержек, чистая работа. Теперь мечтаем о модульной бане от ЭкоКаркас!'},
-{n:'Сергей Крюгер',d:'4 ноября 2024',t:'Отличная компания! Обращался со строительством каркасного дома, построили дом раньше оговоренных сроков. Проект дома сделали по моим хотелкам. Спасибо большое команде!'},
+{n:'Олеся Канаева',d:'2 декабря 2025',t:'Сравнила несколько компаний, здесь было наилучшее предложение. Все четко - смета прозрачная, сроки соблюдены. Построили без проблем! Спасибо за отличную работу!'},
+{n:'Дмитрий Г.',d:'13 января 2026',t:'Заказал баню, все сделали за 2 недели, из хороших материалов, качество отличное, всем рекомендую!'},
+{n:'Тим Новиков',d:'2 ноября 2025',t:'Два месяца назад построили наш каркасный дом, результат превзошел все ожидания! Никаких задержек, чистая работа. Теперь мечтаем о модульной бане от ЭкоКаркас!'},
+{n:'Сергей Крюгер',d:'4 ноября 2024',t:'Отличная компания! Обращался со строительством каркасного дома, построили дом раньше оговоренных сроков. Проект дома сделали по моим хотелкам. Спасибо большое команде!'}
 ];
-document.getElementById('rtt').innerHTML=revs.map(r=>`<div class="rc"><div class="rs2">★★★★★</div><div class="rsrc">Яндекс.Карты · ${r.d}</div><p class="rx">«${r.t}»</p><div class="rvi"><div class="rav">${r.n[0]}</div><div><div style="font-weight:700;font-size:14px">${r.n}</div></div></div></div>`).join('');
+document.getElementById('rtt').innerHTML=revs.map(function(r){return '<div class="rc"><div class="rs2">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="rsrc">Яндекс.Карты &middot; '+r.d+'</div><p class="rx">&laquo;'+r.t+'&raquo;</p><div style="display:flex;align-items:center;gap:12px"><div style="width:42px;height:42px;border-radius:50%;background:var(--p);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--w);font-size:16px">'+r.n[0]+'</div><div style="font-weight:700;font-size:14px">'+r.n+'</div></div></div>'}).join('');
 sC('rtt','rp','rn',400);
 
 // FAQ
-const faqs=[{q:'Сколько стоит каркасный дом?',a:'От 65 000 ₽/м². Звоните +7 (993) 270-73-73.'},{q:'Боится ли каркасный дом воды?',a:'Нет. Качественная гидроизоляция и вентфасад.'},{q:'Тёплый ли дом зимой?',a:'Да! Утепление 200 мм — очень тёплый.'},{q:'Сколько длится строительство?',a:'Каркас 2–4 мес., газоблок 4–6, модульный 1–2.'},{q:'Работаете с ипотекой?',a:'Да! Сбербанк, ВТБ, Дом.РФ.'},{q:'Можно изменить планировку?',a:'Конечно! Адаптируем под вас.'},{q:'Какая гарантия?',a:'3 года. Всё в договоре.'},{q:'Сколько простоит дом?',a:'50+ лет. Лес камерной сушки + антисептик.'}];
-document.getElementById('ffl').innerHTML=faqs.map(f=>`<div class="fi"><div class="fq">${f.q}<span class="fic">+</span></div><div class="fa"><p>${f.a}</p></div></div>`).join('');
-document.querySelectorAll('.fq').forEach(q=>q.onclick=()=>q.parentElement.classList.toggle('op'));
+var faqs=[
+{q:'Сколько стоит каркасный дом?',a:'От 65 000 руб/м2. Звоните +7(993)270-73-73.'},
+{q:'Боится ли каркасный дом воды?',a:'Нет. Качественная гидроизоляция и вентфасад.'},
+{q:'Теплый ли дом зимой?',a:'Да! Утепление 200 мм - очень теплый.'},
+{q:'Сколько длится строительство?',a:'Каркас 2-4 мес., газоблок 4-6, модульный 1-2.'},
+{q:'Работаете с ипотекой?',a:'Да! Сбербанк, ВТБ, Дом.РФ.'},
+{q:'Можно изменить планировку?',a:'Конечно! Адаптируем под вас.'},
+{q:'Какая гарантия?',a:'3 года. Все в договоре.'},
+{q:'Сколько простоит дом?',a:'50+ лет. Лес камерной сушки + антисептик.'}
+];
+document.getElementById('ffl').innerHTML=faqs.map(function(f){return '<div class="fi"><div class="fq">'+f.q+'<span class="fic">+</span></div><div class="fa"><p>'+f.a+'</p></div></div>'}).join('');
+document.querySelectorAll('.fq').forEach(function(q){q.onclick=function(){q.parentElement.classList.toggle('op')}});
 
 // CALC
-const cA=document.getElementById('cA');cA.oninput=()=>document.getElementById('aV').textContent=cA.value;
-document.getElementById('cB').onclick=()=>{const a=+cA.value,fl=+document.getElementById('cF').value,t=document.getElementById('cT').value;const pr={karkas:65000,gazoblok:75000,modular:55000,banya:60000},nm={karkas:'Каркасный',gazoblok:'Газоблок',modular:'Модульный',banya:'Баня'},f=1+(fl-1)*.12,tot=Math.round(pr[t]*a*f);document.getElementById('cP').textContent=tot.toLocaleString('ru-RU');document.getElementById('cBD').innerHTML=[{l:'Тип',v:nm[t]},{l:'Площадь',v:a+' м²'},{l:'Этажей',v:fl},{l:'Цена/м²',v:pr[t].toLocaleString('ru-RU')+' ₽'},{l:'Коэфф.',v:'×'+f.toFixed(2)}].map(r=>`<div class="cl"><span>${r.l}</span><span style="font-weight:600">${r.v}</span></div>`).join('')};
+var cA=document.getElementById('cA');
+cA.oninput=function(){document.getElementById('aV').textContent=cA.value};
+document.getElementById('cB').onclick=function(){
+  var a=+cA.value,fl=+document.getElementById('cF').value,t=document.getElementById('cT').value;
+  var pr={karkas:65000,gazoblok:75000,modular:55000,banya:60000};
+  var nm={karkas:'Каркасный',gazoblok:'Газоблок',modular:'Модульный',banya:'Баня'};
+  var f=1+(fl-1)*.12,tot=Math.round(pr[t]*a*f);
+  document.getElementById('cP').textContent=tot.toLocaleString('ru-RU');
+  document.getElementById('cBD').innerHTML=[{l:'Тип',v:nm[t]},{l:'Площадь',v:a+' м2'},{l:'Этажей',v:fl},{l:'Цена/м2',v:pr[t].toLocaleString('ru-RU')+' руб'},{l:'Коэфф.',v:'x'+f.toFixed(2)}].map(function(r){return '<div class="cl"><span>'+r.l+'</span><span style="font-weight:600">'+r.v+'</span></div>'}).join('');
+};
 
-// FORM
-document.getElementById('sB').onclick=()=>{const n=document.getElementById('fN').value.trim(),p=document.getElementById('fP').value.trim();if(!n||!p){alert('Заполните имя и телефон.');return}if(!document.getElementById('cs').checked)return;const BOT='7833693424:AAGzu0NPuOpyS9LVEozEeT347s6jemxKD_M',CHAT='6510898129';if(BOT!=='7833693424:AAGzu0NPuOpyS9LVEozEeT347s6jemxKD_M'){const e=document.getElementById('fE').value.trim(),s=document.getElementById('fS').value,m=document.getElementById('fM').value.trim();const txt=['🏠 Заявка!','',`👤 ${n}`,`📞 ${p}`,e?`📧 ${e}`:'',s?`🔨 ${s}`:'',m?`💬 ${m}`:'','',`📅 ${new Date().toLocaleString('ru-RU')}`].filter(Boolean).join('\n');fetch(`https://api.telegram.org/bot${BOT}/sendMessage`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({chat_id:CHAT,text:txt})}).catch(console.error)}alert('Спасибо! Мы свяжемся с вами.');['fN','fP','fE','fM'].forEach(id=>document.getElementById(id).value='');document.getElementById('fS').value=''};
+// FORM + TELEGRAM BOT
+document.getElementById('sB').onclick=function(){
+  var n=document.getElementById('fN').value.trim();
+  var p=document.getElementById('fP').value.trim();
+  if(!n||!p){alert('Заполните имя и телефон.');return}
+  if(!document.getElementById('cs').checked)return;
+  var e=document.getElementById('fE').value.trim();
+  var s=document.getElementById('fS').value;
+  var m=document.getElementById('fM').value.trim();
+  var txt='🏠 Заявка!\n\n👤 '+n+'\n📞 '+p;
+  if(e)txt+='\n📧 '+e;
+  if(s)txt+='\n🔨 '+s;
+  if(m)txt+='\n💬 '+m;
+  txt+='\n\n📅 '+new Date().toLocaleString('ru-RU');
+  fetch('https://api.telegram.org/bot7833693424:AAGzu0NPuOpyS9LVEozEeT347s6jemxKD_M/sendMessage',{
+    method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({chat_id:'6510898129',text:txt})
+  }).catch(function(err){console.error(err)});
+  alert('Спасибо! Мы свяжемся с вами.');
+  ['fN','fP','fE','fM'].forEach(function(id){document.getElementById(id).value=''});
+  document.getElementById('fS').value='';
+};
 
 // REVEAL
-document.querySelectorAll('
+var ro=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add('vis')})},{threshold:0.1});
+document.querySelectorAll('.rv2').forEach(function(e){ro.observe(e)});
+
+// SMOOTH SCROLL
+document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){var t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'})}})});
+
+bc();
+</script>
+</body>
+</html>
