@@ -45,7 +45,7 @@ const projects = [
     area: '80 м²',
     floors: '1 этаж',
     bedrooms: '2 спальни',
-    price: 'от 5 200 000 ₽',
+    price: 'от 6 200 000 ₽',
     images: ['portfolio/karkas-3/1.jpg','portfolio/karkas-3/2.jpg','portfolio/karkas-3/3.jpg','portfolio/karkas-3/4.jpg','portfolio/karkas-3/5.jpg'],
     fallback: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80'
   },
@@ -81,7 +81,7 @@ const projects = [
     area: '45 м²',
     floors: '1 этаж',
     bedrooms: '1 спальня',
-    price: 'от 2 475 000 ₽',
+    price: 'от 1 475 000 ₽',
     images: ['portfolio/modular-1/1.jpg','portfolio/modular-1/2.jpg','portfolio/modular-1/3.jpg','portfolio/modular-1/4.jpg','portfolio/modular-1/5.jpg'],
     fallback: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600&q=80'
   },
@@ -93,7 +93,7 @@ const projects = [
     area: '65 м²',
     floors: '1 этаж',
     bedrooms: '2 спальни',
-    price: 'от 3 575 000 ₽',
+    price: 'от 2 575 000 ₽',
     images: ['portfolio/modular-2/1.jpg','portfolio/modular-2/2.jpg','portfolio/modular-2/3.jpg','portfolio/modular-2/4.jpg','portfolio/modular-2/5.jpg'],
     fallback: 'https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=600&q=80'
   },
