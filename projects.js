@@ -17,9 +17,9 @@ const projects = [
   {
     id: 1,
     category: 'karkas',
-    name: 'Барнхаус «Скандинавия»',
-    area: '120 м²',
-    floors: '2 этажа',
+    name: '«СкайЛайн»',
+    area: '135 м²',
+    floors: '1 этаж',
     bedrooms: '3 спальни',
     price: 'от 7 800 000 ₽',
     images: ['portfolio/karkas-1/1.jpg','portfolio/karkas-1/2.jpg','portfolio/karkas-1/3.jpg','portfolio/karkas-1/4.jpg','portfolio/karkas-1/5.jpg'],
