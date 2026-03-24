@@ -60,7 +60,7 @@ footer{background:var(--s);color:rgba(255,255,255,.5);border-top:1px solid rgba(
 .proj-docs{background:var(--s)}.proj-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:40px}.proj-box{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:28px;color:var(--w)}.proj-box h3{font-family:'Playfair Display',serif;font-size:24px;margin-bottom:8px}.proj-box p{font-size:14px;color:rgba(255,255,255,.65);line-height:1.6;margin-bottom:20px}.proj-carousel{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding-bottom:8px;scrollbar-width:thin;scrollbar-color:var(--p) transparent}.proj-carousel img{flex:0 0 240px;height:340px;object-fit:cover;border-radius:12px;scroll-snap-align:start;box-shadow:0 4px 16px rgba(0,0,0,.3)}
 .ip-info{font-size:11px;color:rgba(255,255,255,.35);text-align:center;padding:16px 60px;background:var(--s);border-top:1px solid rgba(255,255,255,.05);line-height:1.6}
 @media(max-width:1024px){.sg,.wg,.gg{grid-template-columns:repeat(2,1fr)}.hi{grid-template-columns:1fr}.hero h1{font-size:44px}.proj-grid{grid-template-columns:1fr}}
-@media(max-width:768px){nav{padding:0 20px}.nl,.np{display:none}.hb{display:flex}section{padding:60px 20px}.hero{padding:100px 20px 60px}.hero h1{font-size:36px}.sh{font-size:32px}.mi2{padding:32px 20px;flex-direction:column;text-align:center}.mbs{justify-content:center}.mt h2{font-size:28px}.sg,.wg,.gg,.pg,.cg,.cog,.proj-grid{grid-template-columns:1fr}.mg{height:260px}.rc{flex:0 0 300px}.fti{flex-direction:column;text-align:center;padding:24px 20px}.ip-info{padding:16px 20px}}
+@media(max-width:768px){nav{padding:0 20px}.nl,.np{display:none}.hb{display:flex}section{padding:60px 20px}.hero{padding:100px 20px 60px}.hero h1{font-size:36px}.sh{font-size:32px}.mi2{padding:32px 20px;flex-direction:column;text-align:center}.mbs{justify-content:center}.mt h2{font-size:28px}.sg,.wg,.gg,.pg,.cg,.cog,.proj-grid{grid-template-columns:1fr}.mg{height:260px}.rc{flex:0 0 300px}.fti{flex-direction:column;text-align:center;padding:24px 20px}.ip-info{padding:16px 20px}#calculator>div{grid-template-columns:1fr!important}#calculator>div>div:first-child{padding:60px 20px!important}}
 </style>
 </head>
 <body>
@@ -143,13 +143,27 @@ footer{background:var(--s);color:rgba(255,255,255,.5);border-top:1px solid rgba(
 
 <section class="faq"><div class="si rv2"><div class="st" style="text-align:center">Вопросы</div><h2 class="sh" style="text-align:center">Частые вопросы</h2><div class="fl" id="ffl"></div></div></section>
 
-<section class="calc" id="calculator"><div class="si rv2"><div class="st">Калькулятор</div><h2 class="sh">Рассчитайте стоимость</h2>
-<div class="cg"><div class="cf">
-<div class="fr"><label>Тип</label><select id="cT"><option value="karkas">Каркасный</option><option value="gazoblok">Газоблок</option><option value="modular">Модульный</option><option value="banya">Баня</option></select></div>
-<div class="fr"><label>Площадь: <span class="rnv" id="aV">100</span> м&#178;</label><input type="range" id="cA" min="30" max="300" value="100"></div>
-<div class="fr"><label>Этажи</label><select id="cF"><option value="1">1</option><option value="2" selected>2</option><option value="3">3</option></select></div>
-<button class="cbn" id="cB">Рассчитать</button>
-</div><div class="cr"><div style="font-size:13px;color:var(--g);margin-bottom:4px">Стоимость</div><div class="cpb"><span>&#8381;</span> <span id="cP">0</span></div><div id="cBD"></div></div></div></div></section>
+<section style="padding:0;background:linear-gradient(135deg,var(--s) 0%,#1a3f1e 100%);position:relative;overflow:hidden" id="calculator">
+<div style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;min-height:400px">
+<div style="padding:80px 60px;display:flex;flex-direction:column;justify-content:center;position:relative;z-index:2">
+  <div class="st" style="color:rgba(255,255,255,.5)">Калькулятор</div>
+  <h2 style="font-family:'Playfair Display',serif;font-size:42px;color:var(--w);line-height:1.2;margin-bottom:16px">Узнайте стоимость<br>вашего <span style="color:var(--p)">дома</span></h2>
+  <p style="font-size:16px;color:rgba(255,255,255,.65);line-height:1.7;margin-bottom:32px;max-width:400px">Подробный расчёт по всем категориям: фундамент, каркас, кровля, фасад, отделка и инженерные системы.</p>
+  <div><button onclick="document.getElementById('calcModal').classList.add('op')" style="display:inline-flex;align-items:center;gap:10px;padding:16px 36px;background:var(--p);color:var(--w);border:none;border-radius:32px;font-size:16px;font-weight:700;cursor:pointer;transition:all .25s;font-family:inherit;box-shadow:0 8px 32px rgba(92,196,77,.3)">&#128200; Рассчитать стоимость</button></div>
+</div>
+<div style="position:relative;overflow:hidden">
+  <img src="1214.png" alt="ЭкоКаркас дом" style="width:100%;height:100%;object-fit:cover" onerror="this.src='1214.jpg';this.onerror=function(){this.src='https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80'}">
+</div>
+</div>
+</section>
+
+<!-- CALCULATOR MODAL -->
+<div class="mo" id="calcModal">
+<div class="mdl" style="max-width:1100px;max-height:95vh">
+<button class="mx" onclick="document.getElementById('calcModal').classList.remove('op')">&#10005;</button>
+<iframe id="calcFrame" src="" style="width:100%;height:90vh;border:none;border-radius:20px" loading="lazy"></iframe>
+</div>
+</div>
 
 <section style="padding:80px 60px;background:var(--pl)"><div class="si rv2"><div class="st">Сравнение</div><h2 class="sh">Какой дом выбрать?</h2>
 <table class="ctb"><thead><tr><th>Параметр</th><th>Каркасный</th><th>Газоблок</th><th>Модульный</th></tr></thead><tbody>
@@ -189,8 +203,10 @@ footer{background:var(--s);color:rgba(255,255,255,.5);border-top:1px solid rgba(
 (function(){
   var arC=document.getElementById('arCarousel');
   var krC=document.getElementById('krCarousel');
-  for(var i=1;i<=23;i++){var img=document.createElement('img');img.src='proektar/'+i+'.jpg';img.alt='Архитектурное решение стр.'+i;img.loading='lazy';img.onerror=function(){this.style.display='none'};arC.appendChild(img)}
-  for(var j=1;j<=63;j++){var img2=document.createElement('img');img2.src='proektkr/'+j+'.jpg';img2.alt='Конструктивное решение стр.'+j;img2.loading='lazy';img2.onerror=function(){this.style.display='none'};krC.appendChild(img2)}
+  var arName='26-03.121-ОМЖБ-13,4х8-103 АР_compressed-1';
+  var krName='26-03.121-ОМЖБ-13,4х8-103 КД_compressed-1';
+  for(var i=1;i<=23;i++){var img=document.createElement('img');img.src='proektar/'+arName+' ('+i+').jpg';img.alt='АР стр.'+i;img.loading='lazy';img.onerror=function(){this.src='proektar/'+i+'.jpg';this.onerror=function(){this.style.display='none'}};arC.appendChild(img)}
+  for(var j=1;j<=63;j++){var img2=document.createElement('img');img2.src='proektkr/'+krName+' ('+j+').jpg';img2.alt='КД стр.'+j;img2.loading='lazy';img2.onerror=function(){this.src='proektkr/'+j+'.jpg';this.onerror=function(){this.style.display='none'}};krC.appendChild(img2)}
 })();
 
 // CURSOR
@@ -324,17 +340,11 @@ var faqs=[
 document.getElementById('ffl').innerHTML=faqs.map(function(f){return '<div class="fi"><div class="fq">'+f.q+'<span class="fic">+</span></div><div class="fa"><p>'+f.a+'</p></div></div>'}).join('');
 document.querySelectorAll('.fq').forEach(function(q){q.onclick=function(){q.parentElement.classList.toggle('op')}});
 
-// CALC
-var cA=document.getElementById('cA');
-cA.oninput=function(){document.getElementById('aV').textContent=cA.value};
-document.getElementById('cB').onclick=function(){
-  var a=+cA.value,fl=+document.getElementById('cF').value,t=document.getElementById('cT').value;
-  var pr={karkas:65000,gazoblok:75000,modular:55000,banya:60000};
-  var nm={karkas:'Каркасный',gazoblok:'Газоблок',modular:'Модульный',banya:'Баня'};
-  var f=1+(fl-1)*.12,tot=Math.round(pr[t]*a*f);
-  document.getElementById('cP').textContent=tot.toLocaleString('ru-RU');
-  document.getElementById('cBD').innerHTML=[{l:'Тип',v:nm[t]},{l:'Площадь',v:a+' м2'},{l:'Этажей',v:fl},{l:'Цена/м2',v:pr[t].toLocaleString('ru-RU')+' руб'},{l:'Коэфф.',v:'x'+f.toFixed(2)}].map(function(r){return '<div class="cl"><span>'+r.l+'</span><span style="font-weight:600">'+r.v+'</span></div>'}).join('');
-};
+// CALCULATOR MODAL
+document.getElementById('calcModal').onclick=function(e){if(e.target===e.currentTarget){e.currentTarget.classList.remove('op');document.getElementById('calcFrame').src=''}};
+// Load calculator iframe on open
+var calcBtn=document.querySelector('[onclick*="calcModal"]');
+if(calcBtn){var origClick=calcBtn.onclick;calcBtn.onclick=function(){document.getElementById('calcFrame').src='calculator.html';document.getElementById('calcModal').classList.add('op')}};
 
 // FORM + TELEGRAM BOT
 document.getElementById('sB').onclick=function(){
