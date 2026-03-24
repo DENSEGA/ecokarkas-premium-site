@@ -397,13 +397,30 @@ function calc(){
 
   html+='<div style="padding:24px;background:linear-gradient(135deg,var(--s),#24392f);border-radius:var(--r);text-align:center">';
   html+='<div style="font-size:13px;color:rgba(255,255,255,.5);margin-bottom:6px">&#9888; Предварительный расчёт</div>';
-  html+='<div style="font-size:16px;color:var(--w);line-height:1.7;max-width:500px;margin:0 auto">Указанная стоимость является <b style="color:var(--p)">ориентировочной</b> и может измениться после выезда специалиста на участок и составления индивидуальной сметы.</div>';
-  html+='<div style="margin-top:16px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap">';
-  html+='<a href="tel:+79932707373" style="display:inline-flex;align-items:center;gap:6px;padding:10px 22px;background:var(--p);color:var(--w);border-radius:32px;font-size:14px;font-weight:700;text-decoration:none">&#128222; +7 (993) 270-73-73</a>';
-  html+='<a href="tel:+79932707272" style="display:inline-flex;align-items:center;gap:6px;padding:10px 22px;background:rgba(255,255,255,.1);color:var(--w);border-radius:32px;font-size:14px;font-weight:600;text-decoration:none">+7 (993) 270-72-72</a>';
+  html+='<div style="font-size:16px;color:var(--w);line-height:1.7;max-width:500px;margin:0 auto;margin-bottom:20px">Указанная стоимость является <b style="color:var(--p)">ориентировочной</b>. Оставьте контакты — мы перезвоним и уточним детали.</div>';
+  html+='<div style="max-width:400px;margin:0 auto;text-align:left">';
+  html+='<input id="cName" placeholder="Ваше имя" style="width:100%;padding:12px 14px;margin-bottom:10px;border:1px solid rgba(255,255,255,.15);border-radius:8px;background:rgba(255,255,255,.08);color:var(--w);font-size:14px;outline:none;font-family:inherit">';
+  html+='<input id="cPhone" placeholder="Телефон" style="width:100%;padding:12px 14px;margin-bottom:14px;border:1px solid rgba(255,255,255,.15);border-radius:8px;background:rgba(255,255,255,.08);color:var(--w);font-size:14px;outline:none;font-family:inherit">';
+  html+='<button onclick="sendCalc('+totalSum+')" style="width:100%;padding:14px;background:var(--p);color:var(--w);border:none;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;font-family:inherit">Отправить расчёт</button>';
   html+='</div></div>';
 
+  // Save categories for telegram send
+  window._calcCats=catOrder.filter(function(cn){return cats[cn]}).map(function(cn){return cn+': '+cats[cn].items.map(function(it){return it.name}).join(', ')});
+
   document.getElementById('main').innerHTML=html;
+}
+
+function sendCalc(total){
+  var n=document.getElementById('cName').value.trim();
+  var p=document.getElementById('cPhone').value.trim();
+  if(!n||!p){alert('Заполните имя и телефон');return}
+  var txt='&#128200; Расчёт с сайта!\n\n&#128100; '+n+'\n&#128222; '+p+'\n&#128176; Итого: '+fmt(total)+' руб.\n\n';
+  if(window._calcCats)txt+=window._calcCats.join('\n');
+  txt+='\n\n&#128197; '+new Date().toLocaleString('ru-RU');
+  fetch('https://api.telegram.org/bot7833693424:AAGzu0NPuOpyS9LVEozEeT347s6jemxKD_M/sendMessage',{
+    method:'POST',headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({chat_id:'6510898129',text:txt})
+  }).then(function(){alert('Спасибо! Мы свяжемся с вами и уточним детали расчёта.')}).catch(function(){alert('Спасибо! Позвоните нам: +7(993)270-73-73')});
 }
 
 function fmt(n){return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g,' ')}
