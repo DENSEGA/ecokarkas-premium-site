@@ -23,7 +23,7 @@ var projects = [
     bedrooms: '3 спальни',
     price: 'от 7 800 000 ₽',
     images: ['portfolio/karkas-1/1.jpg','portfolio/karkas-1/2.jpg','portfolio/karkas-1/3.jpg','portfolio/karkas-1/4.jpg','portfolio/karkas-1/5.jpg'],
-    fallback: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80'
+    fallback: ''
   },
 
   {
@@ -35,7 +35,7 @@ var projects = [
     bedrooms: '2 спальни',
     price: 'от 2 875 000 ₽',
     images: ['portfolio/karkas-2/1.jpg','portfolio/karkas-2/2.jpg','portfolio/karkas-2/3.jpg','portfolio/karkas-2/4.jpg','portfolio/karkas-2/5.jpg'],
-    fallback: 'https://images.unsplash.com/photo-1600585154340-be6161a56c0c?w=600&q=80'
+    fallback: ''
   },
 
   {
@@ -47,7 +47,7 @@ var projects = [
     bedrooms: '2 спальни',
     price: 'от 5 200 000 ₽',
     images: ['portfolio/karkas-3/1.jpg','portfolio/karkas-3/2.jpg','portfolio/karkas-3/3.jpg','portfolio/karkas-3/4.jpg','portfolio/karkas-3/5.jpg'],
-    fallback: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80'
+    fallback: ''
   },
 
   {
@@ -59,7 +59,7 @@ var projects = [
     bedrooms: '4 спальни',
     price: 'от 10 000 000 ₽',
     images: ['portfolio/karkas-4/1.jpg','portfolio/karkas-4/2.jpg','portfolio/karkas-4/3.jpg','portfolio/karkas-4/4.jpg','portfolio/karkas-4/5.jpg'],
-    fallback: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80'
+    fallback: ''
   },
 
   {
@@ -71,7 +71,7 @@ var projects = [
     bedrooms: '3 спальни',
     price: 'от 9 750 000 ₽',
     images: ['portfolio/gazoblok-2/1.jpg','portfolio/gazoblok-2/2.jpg','portfolio/gazoblok-2/3.jpg','portfolio/gazoblok-2/4.jpg','portfolio/gazoblok-2/5.jpg'],
-    fallback: 'https://images.unsplash.com/photo-1600573472592-401b489a3cdc?w=600&q=80'
+    fallback: ''
   },
 
   {
@@ -83,7 +83,7 @@ var projects = [
     bedrooms: '1 спальня',
     price: 'от 2 475 000 ₽',
     images: ['portfolio/modular-1/1.jpg','portfolio/modular-1/2.jpg','portfolio/modular-1/3.jpg','portfolio/modular-1/4.jpg','portfolio/modular-1/5.jpg'],
-    fallback: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600&q=80'
+    fallback: ''
   },
 
   {
@@ -95,7 +95,7 @@ var projects = [
     bedrooms: '2 спальни',
     price: 'от 3 575 000 ₽',
     images: ['portfolio/modular-2/1.jpg','portfolio/modular-2/2.jpg','portfolio/modular-2/3.jpg','portfolio/modular-2/4.jpg','portfolio/modular-2/5.jpg'],
-    fallback: 'https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=600&q=80'
+    fallback: ''
   },
 
   {
@@ -107,7 +107,7 @@ var projects = [
     bedrooms: 'Ком. отдыха',
     price: 'от 1 400 000 ₽',
     images: ['portfolio/banya-1/1.jpg','portfolio/banya-1/2.jpg','portfolio/banya-1/3.jpg','portfolio/banya-1/4.jpg','portfolio/banya-1/5.jpg'],
-    fallback: 'https://images.unsplash.com/photo-1600585154340-be6161a56c0c?w=600&q=80'
+    fallback: ''
   },
 
   // ↓↓↓ ДОБАВЛЯЙТЕ НОВЫЕ ПРОЕКТЫ НИЖЕ ↓↓↓
