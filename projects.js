@@ -29,11 +29,11 @@ const projects = [
   {
     id: 2,
     category: 'karkas',
-    name: 'Каркасный «Лесная поляна»',
-    area: '95 м²',
-    floors: '1 + мансарда',
+    name: 'Новый Афрейм»',
+    area: '43 м²',
+    floors: '1 этаж',
     bedrooms: '2 спальни',
-    price: 'от 6 175 000 ₽',
+    price: 'от 2 875 000 ₽',
     images: ['portfolio/karkas-2/1.jpg','portfolio/karkas-2/2.jpg','portfolio/karkas-2/3.jpg','portfolio/karkas-2/4.jpg','portfolio/karkas-2/5.jpg'],
     fallback: 'https://images.unsplash.com/photo-1600585154340-be6161a56c0c?w=600&q=80'
   },
