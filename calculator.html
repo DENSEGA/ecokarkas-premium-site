@@ -378,7 +378,6 @@ function calc(){
   // RENDER
   var html='';
   html+='<div class="summary-cards">';
-  html+='<div class="s-card total"><div class="label">Итого</div><div class="value"><span>'+fmt(totalSum)+'</span> &#8381;</div></div>';
   html+='<div class="s-card"><div class="label">Площадь</div><div class="value">'+area+' <span>м&#178;</span></div></div>';
   html+='</div>';
 
@@ -392,7 +391,11 @@ function calc(){
     html+='</div>';
   });
 
-  html+='<div style="margin-top:32px;padding:24px;background:linear-gradient(135deg,var(--s),#24392f);border-radius:var(--r);text-align:center">';
+  html+='<div class="summary-cards" style="margin-bottom:24px">';
+  html+='<div class="s-card total"><div class="label">Итого стоимость</div><div class="value"><span>'+fmt(totalSum)+'</span> &#8381;</div></div>';
+  html+='</div>';
+
+  html+='<div style="padding:24px;background:linear-gradient(135deg,var(--s),#24392f);border-radius:var(--r);text-align:center">';
   html+='<div style="font-size:13px;color:rgba(255,255,255,.5);margin-bottom:6px">&#9888; Предварительный расчёт</div>';
   html+='<div style="font-size:16px;color:var(--w);line-height:1.7;max-width:500px;margin:0 auto">Указанная стоимость является <b style="color:var(--p)">ориентировочной</b> и может измениться после выезда специалиста на участок и составления индивидуальной сметы.</div>';
   html+='<div style="margin-top:16px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap">';
