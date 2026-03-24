@@ -47,7 +47,7 @@ const projects = [
     bedrooms: '2 спальни',
     price: 'от 5 200 000 ₽',
     images: ['portfolio/karkas-3/1.jpg','portfolio/karkas-3/2.jpg','portfolio/karkas-3/3.jpg','portfolio/karkas-3/4.jpg','portfolio/karkas-3/5.jpg'],
-    fallback: 
+    fallback: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80' 
   },
 
   {
@@ -59,7 +59,7 @@ const projects = [
     bedrooms: '4 спальни',
     price: 'от 10 000 000 ₽',
     images: ['portfolio/karkas-4/1.jpg','portfolio/karkas-4/2.jpg','portfolio/karkas-4/3.jpg','portfolio/karkas-4/4.jpg','portfolio/karkas-4/5.jpg'],
-    fallback: 
+    fallback: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80' 
   },
 
   {
