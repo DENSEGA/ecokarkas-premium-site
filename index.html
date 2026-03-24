@@ -124,19 +124,13 @@ footer{background:var(--s);color:rgba(255,255,255,.5);border-top:1px solid rgba(
 <section class="proj-docs" id="docs"><div class="si rv2">
   <div class="st" style="color:rgba(255,255,255,.5)">Проектирование</div>
   <h2 class="sh" style="color:var(--w)">Каждый дом проектируется индивидуально</h2>
-  <p style="font-size:16px;color:rgba(255,255,255,.6);line-height:1.7;max-width:600px;margin-bottom:8px">Вы получаете полный комплект проектной документации: архитектурное решение и конструктивный раздел. Ниже примеры реальных проектов.</p>
-  <div class="proj-grid">
-    <div class="proj-box">
-      <h3>&#128209; Архитектурное решение</h3>
-      <p>Планировки, фасады, разрезы, общий вид дома. 23 листа.</p>
-      <div class="cw"><button class="cbt pr" id="arPrev" style="color:var(--w);background:rgba(255,255,255,.15);border-color:rgba(255,255,255,.2)">&#8249;</button><div class="ct3" id="arCarousel" style="min-height:300px"></div><button class="cbt nx" id="arNext" style="color:var(--w);background:rgba(255,255,255,.15);border-color:rgba(255,255,255,.2)">&#8250;</button></div>
-    </div>
-    <div class="proj-box">
-      <h3>&#128295; Конструктивное решение</h3>
-      <p>Узлы, сечения, фундамент, каркас, кровля. 18 листов.</p>
-      <div class="cw"><button class="cbt pr" id="krPrev" style="color:var(--w);background:rgba(255,255,255,.15);border-color:rgba(255,255,255,.2)">&#8249;</button><div class="ct3" id="krCarousel" style="min-height:300px"></div><button class="cbt nx" id="krNext" style="color:var(--w);background:rgba(255,255,255,.15);border-color:rgba(255,255,255,.2)">&#8250;</button></div>
-    </div>
-  </div>
+  <p style="font-size:16px;color:rgba(255,255,255,.6);line-height:1.7;max-width:600px;margin-bottom:32px">Полный комплект проектной документации: архитектурное решение и конструктивный раздел.</p>
+
+  <h3 style="color:var(--p);font-size:20px;margin-bottom:16px;font-family:'Playfair Display',serif">&#128209; Архитектурное решение <span style="font-size:14px;color:rgba(255,255,255,.4);font-family:Inter,sans-serif">(21 лист)</span></h3>
+  <div class="cw" style="margin-bottom:40px"><button class="cbt pr" id="arPrev" style="background:var(--p);color:var(--w);border:none;box-shadow:0 4px 16px rgba(92,196,77,.4)">&#8249;</button><div class="ct3" id="arCarousel"></div><button class="cbt nx" id="arNext" style="background:var(--p);color:var(--w);border:none;box-shadow:0 4px 16px rgba(92,196,77,.4)">&#8250;</button></div>
+
+  <h3 style="color:var(--p);font-size:20px;margin-bottom:16px;font-family:'Playfair Display',serif">&#128295; Конструктивное решение <span style="font-size:14px;color:rgba(255,255,255,.4);font-family:Inter,sans-serif">(18 листов)</span></h3>
+  <div class="cw"><button class="cbt pr" id="krPrev" style="background:var(--p);color:var(--w);border:none;box-shadow:0 4px 16px rgba(92,196,77,.4)">&#8249;</button><div class="ct3" id="krCarousel"></div><button class="cbt nx" id="krNext" style="background:var(--p);color:var(--w);border:none;box-shadow:0 4px 16px rgba(92,196,77,.4)">&#8250;</button></div>
 </div></section>
 
 <section style="padding:80px 60px;background:var(--w)" id="process"><div class="si rv2"><div class="st">Фотоотчёт</div><h2 class="sh">Процесс строительства</h2><p class="ss">Реальные фото со строек.</p>
@@ -240,7 +234,7 @@ footer{background:var(--s);color:rgba(255,255,255,.5);border-top:1px solid rgba(
 (function(){
   var arC=document.getElementById('arCarousel');
   var krC=document.getElementById('krCarousel');
-  for(var i=1;i<=23;i++){var img=document.createElement('img');img.src='proektar/'+i+'.jpg';img.alt='АР стр.'+i;img.loading='lazy';img.onerror=function(){this.remove()};arC.appendChild(img)}
+  for(var i=1;i<=21;i++){var img=document.createElement('img');img.src='proektar/'+i+'.jpg';img.alt='АР стр.'+i;img.loading='lazy';img.onerror=function(){this.remove()};arC.appendChild(img)}
   for(var j=1;j<=18;j++){var img2=document.createElement('img');img2.src='proektkr/'+j+'.jpg';img2.alt='КД стр.'+j;img2.loading='lazy';img2.onerror=function(){this.remove()};krC.appendChild(img2)}
 })();
 
