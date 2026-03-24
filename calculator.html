@@ -15,7 +15,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--s);min-heig
 .top-bar .phones{display:flex;gap:16px}.top-bar .phones a{color:var(--w);font-weight:700;font-size:14px;text-decoration:none}
 
 .layout{display:grid;grid-template-columns:380px 1fr;min-height:calc(100vh - 56px)}
-@media(max-width:900px){.layout{grid-template-columns:1fr}.sidebar{max-height:50vh;overflow-y:auto}}
+@media(max-width:900px){.layout{grid-template-columns:1fr;display:flex;flex-direction:column}.sidebar{max-height:none;overflow-y:visible;padding:16px}.main{min-height:auto;padding:16px}.top-bar{padding:12px 16px}.form-group select,.form-group input[type=number]{font-size:16px;padding:14px}.s-card .value{font-size:22px}.s-card.total .value{font-size:26px}}
 
 .sidebar{background:var(--w);border-right:1px solid var(--b);padding:28px;overflow-y:auto}
 .sidebar h2{font-size:18px;font-weight:800;margin-bottom:20px;color:var(--s)}
@@ -80,7 +80,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--s);min-heig
     <a href="tel:+79932707373">+7 (993) 270-73-73</a>
     <a href="tel:+79932707272">+7 (993) 270-72-72</a>
   </div>
-  <a href="https://densega.github.io/ecokarkas-premium-site/" target="_blank">&#8592; На сайт</a>
+  <a href="index.html" style="font-size:14px">&#8592; На сайт</a>
 </div>
 
 <div class="layout">
