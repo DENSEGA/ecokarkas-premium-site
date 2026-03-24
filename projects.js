@@ -65,10 +65,10 @@ var projects = [
   {
     id: 5,
     category: 'gazoblok',
-    name: 'Газоблок «Классика»',
-    area: '130 м²',
+    name: 'Газоблок «Ахметов»',
+    area: '145 м²',
     floors: '2 этажа',
-    bedrooms: '3 спальни',
+    bedrooms: '4 спальни',
     price: 'от 9 750 000 ₽',
     images: ['portfolio/gazoblok-2/1.jpg','portfolio/gazoblok-2/2.jpg','portfolio/gazoblok-2/3.jpg','portfolio/gazoblok-2/4.jpg','portfolio/gazoblok-2/5.jpg'],
     fallback: ''
@@ -77,11 +77,11 @@ var projects = [
   {
     id: 6,
     category: 'modular',
-    name: 'Модульный «Компакт»',
-    area: '45 м²',
+    name: 'Модульный «Скандик3»',
+    area: '96 м²',
     floors: '1 этаж',
-    bedrooms: '1 спальня',
-    price: 'от 2 475 000 ₽',
+    bedrooms: '3 спальня',
+    price: 'от 8 475 000 ₽',
     images: ['portfolio/modular-1/1.jpg','portfolio/modular-1/2.jpg','portfolio/modular-1/3.jpg','portfolio/modular-1/4.jpg','portfolio/modular-1/5.jpg'],
     fallback: ''
   },
@@ -93,7 +93,7 @@ var projects = [
     area: '65 м²',
     floors: '1 этаж',
     bedrooms: '2 спальни',
-    price: 'от 3 575 000 ₽',
+    price: 'от 2 575 000 ₽',
     images: ['portfolio/modular-2/1.jpg','portfolio/modular-2/2.jpg','portfolio/modular-2/3.jpg','portfolio/modular-2/4.jpg','portfolio/modular-2/5.jpg'],
     fallback: ''
   },
@@ -101,11 +101,11 @@ var projects = [
   {
     id: 8,
     category: 'banya',
-    name: 'Баня «Жар»',
-    area: '35 м²',
+    name: 'Баня «Домодедовская»',
+    area: '15 м²',
     floors: '1 этаж',
     bedrooms: 'Ком. отдыха',
-    price: 'от 1 400 000 ₽',
+    price: 'от 400 000 ₽',
     images: ['portfolio/banya-1/1.jpg','portfolio/banya-1/2.jpg','portfolio/banya-1/3.jpg','portfolio/banya-1/4.jpg','portfolio/banya-1/5.jpg'],
     fallback: ''
   },
