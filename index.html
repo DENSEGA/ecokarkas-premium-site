@@ -21,8 +21,8 @@ body.ct #dot{width:3px;height:24px;border-radius:2px;background:var(--pd);box-sh
 @media(max-width:768px){body{cursor:auto}#dot,#rng{display:none}}
 nav{position:fixed;top:0;left:0;right:0;padding:0 60px;height:72px;display:flex;justify-content:space-between;align-items:center;background:rgba(255,255,255,.95);backdrop-filter:blur(14px);z-index:1000;border-bottom:1px solid rgba(0,0,0,.05);transition:box-shadow .3s}nav.sc{box-shadow:0 2px 12px rgba(30,60,30,.06)}
 .logo{font-family:'Playfair Display',serif;font-weight:700;font-size:24px;color:var(--p)}.logo img{height:40px}
-.nl{display:flex;gap:24px;list-style:none}.nl a{font-size:14px;font-weight:500;transition:color .2s}.nl a:hover{color:var(--pd)}
-.np{font-size:14px;font-weight:700}.np:hover{color:var(--pd)}
+.nl{display:flex;gap:28px;list-style:none}.nl a{font-size:15px;font-weight:600;transition:color .2s}.nl a:hover{color:var(--pd)}
+.np{font-size:15px;font-weight:700}.np:hover{color:var(--pd)}
 .nc{padding:10px 22px;background:var(--p);color:var(--w);border-radius:32px;font-size:14px;font-weight:700;transition:all .2s;border:none}.nc:hover{background:var(--pd);transform:translateY(-1px)}
 .hb{display:none;flex-direction:column;gap:5px;background:none;border:none;padding:8px}.hb span{width:24px;height:2px;background:var(--s);border-radius:2px}
 .mm{display:none;position:fixed;top:72px;left:0;right:0;bottom:0;background:var(--w);z-index:999;padding:20px;flex-direction:column;gap:8px}.mm.op{display:flex}.mm a{display:block;padding:14px 16px;font-size:16px;font-weight:600;border-radius:10px}
@@ -60,7 +60,21 @@ footer{background:var(--s);color:rgba(255,255,255,.5);border-top:1px solid rgba(
 .proj-docs{background:var(--s)}.proj-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:40px}.proj-box{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:28px;color:var(--w)}.proj-box h3{font-family:'Playfair Display',serif;font-size:24px;margin-bottom:8px}.proj-box p{font-size:14px;color:rgba(255,255,255,.65);line-height:1.6;margin-bottom:20px}.proj-carousel{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding-bottom:8px;scrollbar-width:thin;scrollbar-color:var(--p) transparent}.proj-carousel img{flex:0 0 240px;height:340px;object-fit:cover;border-radius:12px;scroll-snap-align:start;box-shadow:0 4px 16px rgba(0,0,0,.3)}
 .ip-info{font-size:11px;color:rgba(255,255,255,.35);text-align:center;padding:16px 60px;background:var(--s);border-top:1px solid rgba(255,255,255,.05);line-height:1.6}
 @media(max-width:1024px){.sg,.wg,.gg{grid-template-columns:repeat(2,1fr)}.hi{grid-template-columns:1fr}.hero h1{font-size:44px}.proj-grid{grid-template-columns:1fr}}
-@media(max-width:768px){nav{padding:0 20px}.nl,.np{display:none}.hb{display:flex}section{padding:60px 20px}.hero{padding:100px 20px 60px}.hero h1{font-size:36px}.sh{font-size:32px}.mi2{padding:32px 20px;flex-direction:column;text-align:center}.mbs{justify-content:center}.mt h2{font-size:28px}.sg,.wg,.gg,.pg,.cg,.cog,.proj-grid{grid-template-columns:1fr}.mg{height:260px}.rc{flex:0 0 300px}.fti{flex-direction:column;text-align:center;padding:24px 20px}.ip-info{padding:16px 20px}#calculator>div{grid-template-columns:1fr!important}#calculator>div>div:first-child{padding:60px 20px!important}}
+.mission{background:var(--w);position:relative;overflow:hidden}
+.mission-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:48px;align-items:center}
+.mission-text{position:relative;z-index:2}
+.mission-text .big-quote{font-family:'Playfair Display',serif;font-size:120px;color:var(--pl);line-height:1;position:absolute;top:-30px;left:-10px;z-index:-1}
+.mission-text blockquote{font-size:20px;font-style:italic;line-height:1.7;color:var(--s);margin-bottom:24px;position:relative;z-index:2}
+.mission-values{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px}
+.m-val{padding:16px;background:var(--pl);border-radius:12px;border-left:4px solid var(--p)}
+.m-val h4{font-size:14px;font-weight:700;color:var(--pd);margin-bottom:4px}
+.m-val p{font-size:13px;color:var(--g);line-height:1.5}
+.team-photo{border-radius:20px;overflow:hidden;box-shadow:0 24px 64px rgba(0,0,0,.12);position:relative}
+.team-photo img{width:100%;height:100%;object-fit:cover;min-height:400px}
+.team-photo::after{content:'';position:absolute;bottom:0;left:0;right:0;height:120px;background:linear-gradient(transparent,rgba(30,45,35,.7))}
+.team-label{position:absolute;bottom:20px;left:24px;right:24px;z-index:2;color:var(--w);font-size:15px;font-weight:700}
+@media(max-width:1024px){.mission-grid{grid-template-columns:1fr}}
+@media(max-width:768px){nav{padding:0 20px}.nl,.np{display:none}.hb{display:flex}section{padding:60px 20px}.hero{padding:100px 20px 60px}.hero h1{font-size:36px}.sh{font-size:32px}.mi2{padding:32px 20px;flex-direction:column;text-align:center}.mbs{justify-content:center}.mt h2{font-size:28px}.sg,.wg,.gg,.pg,.cg,.cog,.proj-grid{grid-template-columns:1fr}.mg{height:260px}.rc{flex:0 0 300px}.fti{flex-direction:column;text-align:center;padding:24px 20px}.ip-info{padding:16px 20px}#calculator>div{grid-template-columns:1fr!important}#calculator>div>div:first-child{padding:60px 20px!important}.mission-values{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -68,13 +82,13 @@ footer{background:var(--s);color:rgba(255,255,255,.5);border-top:1px solid rgba(
 
 <nav id="nb">
   <a href="#" class="logo"><img src="1213.jpg" alt="ЭкоКаркас" onerror="this.outerHTML='ЭкоКаркас'"></a>
-  <ul class="nl"><li><a href="#services">Услуги</a></li><li><a href="#portfolio">Проекты</a></li><li><a href="#docs">Проектирование</a></li><li><a href="#reviews">Отзывы</a></li><li><a href="#calculator">Расчёт</a></li><li><a href="#contacts">Контакты</a></li></ul>
+  <ul class="nl"><li><a href="#services">Услуги</a></li><li><a href="#portfolio">Проекты</a></li><li><a href="#docs">Проектирование</a></li><li><a href="#mission">О нас</a></li><li><a href="#reviews">Отзывы</a></li><li><a href="#calculator">Расчёт</a></li><li><a href="#contacts">Контакты</a></li></ul>
   <a href="tel:+79932707373" class="np">+7 (993) 270-73-73</a>
   <a href="tel:+79932707272" class="np">+7 (993) 270-72-72</a>
   <a href="#contacts" class="nc">Заявка</a>
   <button class="hb" id="hbBtn"><span></span><span></span><span></span></button>
 </nav>
-<div class="mm" id="mm"><a href="#services" onclick="cmm()">Услуги</a><a href="#portfolio" onclick="cmm()">Проекты</a><a href="#docs" onclick="cmm()">Проектирование</a><a href="#reviews" onclick="cmm()">Отзывы</a><a href="#calculator" onclick="cmm()">Расчёт</a><a href="#contacts" onclick="cmm()">Контакты</a><a href="tel:+79932707373">+7 (993) 270-73-73</a><a href="tel:+79932707272">+7 (993) 270-72-72</a><a href="https://t.me/ecokarkass" target="_blank">Telegram</a></div>
+<div class="mm" id="mm"><a href="#services" onclick="cmm()">Услуги</a><a href="#portfolio" onclick="cmm()">Проекты</a><a href="#docs" onclick="cmm()">Проектирование</a><a href="#mission" onclick="cmm()">О нас</a><a href="#reviews" onclick="cmm()">Отзывы</a><a href="#calculator" onclick="cmm()">Расчёт</a><a href="#contacts" onclick="cmm()">Контакты</a><a href="tel:+79932707373">+7 (993) 270-73-73</a><a href="tel:+79932707272">+7 (993) 270-72-72</a><a href="https://t.me/ecokarkass" target="_blank">Telegram</a></div>
 
 <section class="hero"><div class="hi"><div class="hc">
   <div class="hs"><div class="hsn">64</div><div class="hst">дома построено<br>в Московской области</div></div>
@@ -135,6 +149,29 @@ footer{background:var(--s);color:rgba(255,255,255,.5);border-top:1px solid rgba(
 <div class="gc"><div style="font-size:28px;margin-bottom:12px">&#128176;</div><h4>Фиксированная цена</h4><p>Без доплат.</p></div>
 <div class="gc"><div style="font-size:28px;margin-bottom:12px">&#128222;</div><h4>Поддержка</h4><p><a href="tel:+79932707373" style="color:var(--pd)">+7 (993) 270-73-73</a><br><a href="tel:+79932707272" style="color:var(--pd)">+7 (993) 270-72-72</a></p></div>
 </div></div></section>
+
+<!-- МИССИЯ И КОМАНДА -->
+<section class="mission" id="mission"><div class="si rv2">
+  <div class="st">О нас</div>
+  <h2 class="sh">Наша миссия и команда</h2>
+  <div class="mission-grid">
+    <div class="mission-text">
+      <div class="big-quote">&#8220;</div>
+      <blockquote>Мы строим не просто дома &#8212; мы создаём пространство, в котором рождается счастье. Каждый проект &#8212; это честная работа, качественные материалы и уважение к мечте клиента.</blockquote>
+      <p style="font-size:15px;color:var(--g);line-height:1.7;margin-bottom:24px">За плечами нашей команды &#8212; 64 построенных дома в Московской области. Мы работаем как единый организм: архитекторы, инженеры и строители на каждом этапе.</p>
+      <div class="mission-values">
+        <div class="m-val"><h4>Честность</h4><p>Прозрачная смета, никаких скрытых доплат</p></div>
+        <div class="m-val"><h4>Качество</h4><p>Лес камерной сушки, проверенные поставщики</p></div>
+        <div class="m-val"><h4>Контроль</h4><p>Фото и видеоотчёты с каждого этапа</p></div>
+        <div class="m-val"><h4>Забота</h4><p>Гарантия 3 года, поддержка после сдачи</p></div>
+      </div>
+    </div>
+    <div class="team-photo">
+      <img src="1215.png" alt="Команда ЭкоКаркас" onerror="this.src='1215.jpg';this.onerror=function(){this.src='https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80'}">
+      <div class="team-label">Команда ЭкоКаркас &#8212; строим с душой &#10084;</div>
+    </div>
+  </div>
+</div></section>
 
 <section class="rev" id="reviews"><div class="si rv2">
 <div class="rh"><div><div class="st">Отзывы</div><h2 class="sh">Что говорят клиенты</h2></div>
@@ -203,10 +240,22 @@ footer{background:var(--s);color:rgba(255,255,255,.5);border-top:1px solid rgba(
 (function(){
   var arC=document.getElementById('arCarousel');
   var krC=document.getElementById('krCarousel');
-  var arName='26-03.121-ОМЖБ-13,4х8-103 АР_compressed-1';
-  var krName='26-03.121-ОМЖБ-13,4х8-103 КД_compressed-1';
-  for(var i=1;i<=23;i++){var img=document.createElement('img');img.src='proektar/'+arName+' ('+i+').jpg';img.alt='АР стр.'+i;img.loading='lazy';img.onerror=function(){this.src='proektar/'+i+'.jpg';this.onerror=function(){this.style.display='none'}};arC.appendChild(img)}
-  for(var j=1;j<=63;j++){var img2=document.createElement('img');img2.src='proektkr/'+krName+' ('+j+').jpg';img2.alt='КД стр.'+j;img2.loading='lazy';img2.onerror=function(){this.src='proektkr/'+j+'.jpg';this.onerror=function(){this.style.display='none'}};krC.appendChild(img2)}
+  for(var i=1;i<=23;i++){
+    var num=('000'+i).slice(-4);
+    var img=document.createElement('img');
+    img.src='proektar/26-03.121-ОМЖБ-13,4х8-103 АР_compressed_page-'+num+'.jpg';
+    img.alt='АР стр.'+i;img.loading='lazy';
+    img.onerror=function(){this.style.display='none'};
+    arC.appendChild(img);
+  }
+  for(var j=1;j<=18;j++){
+    var num2=('000'+j).slice(-4);
+    var img2=document.createElement('img');
+    img2.src='proektkr/26-03.121-ОМЖБ-13,4х8-103 КД_compressed_pages-to-jpg-'+num2+'.jpg';
+    img2.alt='КД стр.'+j;img2.loading='lazy';
+    img2.onerror=function(){this.style.display='none'};
+    krC.appendChild(img2);
+  }
 })();
 
 // CURSOR
