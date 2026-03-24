@@ -29,7 +29,7 @@ const projects = [
   {
     id: 2,
     category: 'karkas',
-    name: 'Новый Афрейм»',
+    name: '«Новый Афрейм»',
     area: '43 м²',
     floors: '1 этаж',
     bedrooms: '2 спальни',
@@ -41,7 +41,7 @@ const projects = [
   {
     id: 3,
     category: 'karkas',
-    name: 'Каркасный «Уют»',
+    name: '«Каркасный Уют»',
     area: '80 м²',
     floors: '1 этаж',
     bedrooms: '2 спальни',
@@ -52,12 +52,12 @@ const projects = [
 
   {
     id: 4,
-    category: 'gazoblok',
-    name: 'Газоблок «Премиум»',
-    area: '160 м²',
-    floors: '2 этажа',
+    category: 'karkas',
+    name: ' «Премиум 3 проект»',
+    area: '125 м²',
+    floors: '1 этажа',
     bedrooms: '4 спальни',
-    price: 'от 12 000 000 ₽',
+    price: 'от 10 000 000 ₽',
     images: ['portfolio/gazoblok-1/1.jpg','portfolio/gazoblok-1/2.jpg','portfolio/gazoblok-1/3.jpg','portfolio/gazoblok-1/4.jpg','portfolio/gazoblok-1/5.jpg'],
     fallback: 'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=600&q=80'
   },
