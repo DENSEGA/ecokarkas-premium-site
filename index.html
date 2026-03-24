@@ -128,13 +128,13 @@ footer{background:var(--s);color:rgba(255,255,255,.5);border-top:1px solid rgba(
   <div class="proj-grid">
     <div class="proj-box">
       <h3>&#128209; Архитектурное решение</h3>
-      <p>Планировки, фасады, разрезы, общий вид дома. Пример проекта: 23 листа.</p>
-      <div class="proj-carousel" id="arCarousel"></div>
+      <p>Планировки, фасады, разрезы, общий вид дома. 23 листа.</p>
+      <div class="cw"><button class="cbt pr" id="arPrev" style="color:var(--w);background:rgba(255,255,255,.15);border-color:rgba(255,255,255,.2)">&#8249;</button><div class="ct3" id="arCarousel" style="min-height:300px"></div><button class="cbt nx" id="arNext" style="color:var(--w);background:rgba(255,255,255,.15);border-color:rgba(255,255,255,.2)">&#8250;</button></div>
     </div>
     <div class="proj-box">
       <h3>&#128295; Конструктивное решение</h3>
-      <p>Узлы, сечения, фундамент, каркас, кровля. Пример проекта: 63 листа.</p>
-      <div class="proj-carousel" id="krCarousel"></div>
+      <p>Узлы, сечения, фундамент, каркас, кровля. 18 листов.</p>
+      <div class="cw"><button class="cbt pr" id="krPrev" style="color:var(--w);background:rgba(255,255,255,.15);border-color:rgba(255,255,255,.2)">&#8249;</button><div class="ct3" id="krCarousel" style="min-height:300px"></div><button class="cbt nx" id="krNext" style="color:var(--w);background:rgba(255,255,255,.15);border-color:rgba(255,255,255,.2)">&#8250;</button></div>
     </div>
   </div>
 </div></section>
@@ -240,22 +240,8 @@ footer{background:var(--s);color:rgba(255,255,255,.5);border-top:1px solid rgba(
 (function(){
   var arC=document.getElementById('arCarousel');
   var krC=document.getElementById('krCarousel');
-  for(var i=1;i<=23;i++){
-    var num=('000'+i).slice(-4);
-    var img=document.createElement('img');
-    img.src='proektar/26-03.121-ОМЖБ-13,4х8-103 АР_compressed_page-'+num+'.jpg';
-    img.alt='АР стр.'+i;img.loading='lazy';
-    img.onerror=function(){this.style.display='none'};
-    arC.appendChild(img);
-  }
-  for(var j=1;j<=18;j++){
-    var num2=('000'+j).slice(-4);
-    var img2=document.createElement('img');
-    img2.src='proektkr/26-03.121-ОМЖБ-13,4х8-103 КД_compressed_pages-to-jpg-'+num2+'.jpg';
-    img2.alt='КД стр.'+j;img2.loading='lazy';
-    img2.onerror=function(){this.style.display='none'};
-    krC.appendChild(img2);
-  }
+  for(var i=1;i<=23;i++){var img=document.createElement('img');img.src='proektar/'+i+'.jpg';img.alt='АР стр.'+i;img.loading='lazy';img.onerror=function(){this.remove()};arC.appendChild(img)}
+  for(var j=1;j<=18;j++){var img2=document.createElement('img');img2.src='proektkr/'+j+'.jpg';img2.alt='КД стр.'+j;img2.loading='lazy';img2.onerror=function(){this.remove()};krC.appendChild(img2)}
 })();
 
 // CURSOR
@@ -357,6 +343,8 @@ function sC(tid,pid,nid,sw){
   tk.ontouchend=function(){dr=false};
 }
 sC('ptt','pp','pn',316);
+sC('arCarousel','arPrev','arNext',260);
+sC('krCarousel','krPrev','krNext',260);
 
 // REVIEWS
 var revs=[
